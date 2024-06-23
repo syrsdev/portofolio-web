@@ -8,10 +8,14 @@ export default {
     extend: {
       backgroundColor: {
         'primary': "#241B35",
+        'secondary': "#4D425F",
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
-      }
+      },
+      textColor: {
+        'primary': "#6C35DE",
+      },
     },
   },
   plugins: [],
