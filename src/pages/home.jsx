@@ -1,5 +1,6 @@
 import Button from "../components/button/button";
 import CardProject from "../components/card/cardProject";
+import CardSkill from "../components/card/cardSkill";
 import Title from "../components/title/title";
 import Container from "../layouts/container";
 import Layout from "../layouts/layout";
@@ -89,7 +90,7 @@ const Home = () => {
                     <img
                         src="./assets/waveTop.svg"
                         alt="wave"
-                        className="w-full"
+                        className="relative w-full -z-0"
                     />
                     <Container
                         top="pt-0"
@@ -99,12 +100,50 @@ const Home = () => {
                             <Title title={"My Skills 🎯"}>
                                 Technologies I’ve been working with recently
                             </Title>
+
+                            <div className="grid grid-cols-6 gap-24">
+                                <CardSkill
+                                    title={"ReactJS"}
+                                    src={"/assets/html.png"}
+                                    alt={"#"}
+                                />
+                                <CardSkill
+                                    title={"ReactJS"}
+                                    src={"/assets/html.png"}
+                                    alt={"#"}
+                                />
+                                <CardSkill
+                                    title={"ReactJS"}
+                                    src={"/assets/html.png"}
+                                    alt={"#"}
+                                />
+                                <CardSkill
+                                    title={"ReactJS"}
+                                    src={"/assets/html.png"}
+                                    alt={"#"}
+                                />
+                                <CardSkill
+                                    title={"ReactJS"}
+                                    src={"/assets/html.png"}
+                                    alt={"#"}
+                                />
+                                <CardSkill
+                                    title={"ReactJS"}
+                                    src={"/assets/html.png"}
+                                    alt={"#"}
+                                />
+                                <CardSkill
+                                    title={"ReactJS"}
+                                    src={"/assets/html.png"}
+                                    alt={"#"}
+                                />
+                            </div>
                         </section>
                     </Container>
                     <img
                         src="./assets/waveBottom.svg"
                         alt="wave"
-                        className="w-full -mt-1"
+                        className="relative w-full -mt-1 -z-10"
                     />
                 </div>
             </Layout>
