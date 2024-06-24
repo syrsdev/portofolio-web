@@ -1,10 +1,10 @@
 import Navbar from "./navbar";
 
-function Layout({ children, top = "pt-[160px]" }) {
+function Layout({ children }) {
     return (
         <>
             <Navbar />
-            <main className={`text-white px-[150px] ${top}`}>{children}</main>
+            <main className={`text-white`}>{children}</main>
         </>
     );
 }

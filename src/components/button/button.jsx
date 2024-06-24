@@ -6,14 +6,23 @@ function Button({
     color = "bg-gradient-to-r from-[#6C35DE] to-[#A364FF]",
     onClick,
     href = null,
+    sm = false,
 }) {
     return (
         <>
             {href != null ? (
-                <Link>{children}</Link>
+                <Link
+                    className={`px-12 font-bold text-white ${color} rounded-[10px] hover:shadow-[7px_5px_56px_-14px_#A364FF] transition-all duration-300 active:scale-90 active:shadow-[7px_5px_56px_-10px_#A364FF] w-full text-nowrap ${
+                        sm ? `text-[14px] py-2` : "text-[16px] py-3"
+                    }`}
+                >
+                    {children}
+                </Link>
             ) : (
                 <button
-                    className={`px-12 py-3 font-bold text-white ${color} rounded-[10px]`}
+                    className={`px-12 font-bold text-white ${color} rounded-[10px] hover:shadow-[7px_5px_56px_-14px_#A364FF] transition-all duration-300 active:scale-90 active:shadow-[7px_5px_56px_-10px_#A364FF] w-full text-nowrap ${
+                        sm ? `text-[14px] py-2` : "text-[16px] py-3"
+                    }`}
                 >
                     {children}
                 </button>
