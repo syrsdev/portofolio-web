@@ -16,14 +16,14 @@ function Navbar() {
     return (
         <>
             <nav
-                className={`flex justify-between items-center text-white py-8 px-[100px] font-bold fixed w-full ${
+                className={`flex justify-between items-center text-white py-8 px-[100px] font-bold fixed w-full z-50 transition-all ${
                     navActive
-                        ? "bg-gradient-to-r from-[#6C35DE] via-[#7D43E8] to-[#A364FF] shadow-xl shadow-slate-700 "
-                        : "bg-transparent"
+                        ? "duration-1000 bg-gradient-to-r from-[#6C35DE] via-[#7D43E8] to-[#A364FF] shadow-xl shadow-slate-700 "
+                        : "duration-500 bg-transparent"
                 } `}
             >
-                <p className="text-[20px]">SURYA'S PORTFOLIO</p>
-                <ul className="flex gap-10 text-[18px] items-center">
+                <p className="text-[16px]">SURYA'S PORTFOLIO</p>
+                <ul className="flex gap-10 text-[16px] items-center">
                     <li className="cursor-pointer">Home</li>
                     <li className="cursor-pointer">About</li>
                     <li className="cursor-pointer">Portfolio</li>
