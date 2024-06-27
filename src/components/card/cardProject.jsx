@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../button/button";
 import ButtonSecondary from "../button/buttonSecondary";
+import ButtonGroup from "../button/buttonGroup";
 
 function CardProject({ src, alt = "#", title, caption }) {
     return (
@@ -20,10 +21,12 @@ function CardProject({ src, alt = "#", title, caption }) {
                         className="max-w-[20px] object-contain"
                     />
                 </div>
-                <div className="flex justify-between gap-5 mt-4">
-                    <Button sm="true">View</Button>
-                    <ButtonSecondary sm="true">Github</ButtonSecondary>
-                </div>
+                <ButtonGroup
+                    sm="true"
+                    text1={"View"}
+                    text2={"Github"}
+                    width="full"
+                />
             </div>
         </div>
     );

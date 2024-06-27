@@ -1,4 +1,6 @@
 import Button from "../components/button/button";
+import ButtonGroup from "../components/button/buttonGroup";
+import ButtonSecondary from "../components/button/buttonSecondary";
 import CardProject from "../components/card/cardProject";
 import CardSkill from "../components/card/cardSkill";
 import Title from "../components/title/title";
@@ -146,6 +148,34 @@ const Home = () => {
                         className="relative w-full -mt-1 -z-10"
                     />
                 </div>
+
+                <Container top="pt-[100px]">
+                    <div className="flex bg-secondary rounded-[30px] px-[75px] py-[25px] gap-[100px] justify-between">
+                        <div className="flex flex-col justify-center w-3/5 gap-[15px]">
+                            <h3 className="font-bold text-[30px]">
+                                I’m available for every opportunity!
+                            </h3>
+                            <p className="text-[16px]">
+                                I specialize in Front End Development and
+                                Laravel Web Development. Interested working with
+                                me? Need help on your project? I’d love to hear
+                                you about that.
+                            </p>
+                            <ButtonGroup
+                                sm="true"
+                                text1={"Contact me !"}
+                                text2={"My services ->"}
+                            />
+                        </div>
+                        <div className="flex justify-end w-auto">
+                            <img
+                                src="/assets/opportunity.png"
+                                alt="illustration"
+                                className="object-contain w-full max-w-[280px]"
+                            />
+                        </div>
+                    </div>
+                </Container>
             </Layout>
         </>
     );
