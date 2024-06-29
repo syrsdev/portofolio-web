@@ -1,16 +1,18 @@
 import React from "react";
-import Button from "../button/button";
-import ButtonSecondary from "../button/buttonSecondary";
 import ButtonGroup from "../button/buttonGroup";
+import { Link } from "react-router-dom";
 
 function CardProject({ src, alt = "#", title, caption }) {
     return (
-        <div className="flex flex-col w-full cursor-pointer">
+        <Link className="relative flex flex-col w-full cursor-pointer group">
             <img
                 src={src}
                 alt={alt}
-                className="rounded-t-[15px] h-[175px] object-cover "
+                className="rounded-t-[15px] h-[200px] object-cover group-hover:blur-[1px]"
             />
+            <div className="h-[200px] font-bold absolute text-transparent group-hover:text-white flex items-center justify-center group-hover:bg-black z-30 w-full rounded-t-[15px] group-hover:bg-opacity-60 duration-500 transition-all">
+                Detail Project {"->"}
+            </div>
             <div className="p-5 bg-secondary rounded-b-[15px] flex-col flex gap-1">
                 <h4 className="font-bold text-[16px] line-clamp-1">{title}</h4>
                 <p className="text-[14px] line-clamp-2">{caption}</p>
@@ -28,7 +30,7 @@ function CardProject({ src, alt = "#", title, caption }) {
                     width="full"
                 />
             </div>
-        </div>
+        </Link>
     );
 }
 
