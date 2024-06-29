@@ -40,19 +40,27 @@ function Footer() {
                             <h6 className="font-bold text-[20px] ">Links</h6>
                             <ul className="flex flex-col gap-[15px]">
                                 <li>
-                                    <Link>Home</Link>
+                                    <Link to={"/"}>Home</Link>
                                 </li>
                                 <li>
-                                    <Link>About</Link>
+                                    <Link to={"/under-construction"}>
+                                        About
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link>Portfolio</Link>
+                                    <Link to={"/under-construction"}>
+                                        Portfolio
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link>Services</Link>
+                                    <Link to={"/under-construction"}>
+                                        Services
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link>Contacts</Link>
+                                    <Link to={"/under-construction"}>
+                                        Contacts
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
