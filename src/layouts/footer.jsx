@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 
 function Footer() {
     return (
-        <footer className="mt-[60px] border-t-2 border-primary">
+        <footer className="mt-[60px] border-t-2 border-primary text-wrap">
             <Container top="pt-[50px]">
-                <div className="flex justify-between">
-                    <div className="flex flex-col gap-3 w-max">
+                <div className="flex flex-col justify-between gap-12 lg:flex-row lg:gap-0">
+                    <div className="flex flex-col w-full gap-3 md:w-max">
                         <h5 className="font-bold text-[24px] ">
                             Surya's Portfolio
                         </h5>
@@ -18,21 +18,31 @@ function Footer() {
                             website, Connect with me over socials.
                         </p>
                     </div>
-                    <div className="flex justify-end w-full gap-[100px]">
+                    <div className="flex lg:justify-end w-full gap-12 md:gap-[100px] flex-col md:flex-row text-wrap">
                         <div className="flex flex-col gap-[15px]">
                             <h6 className="font-bold text-[20px] ">
                                 Contact Info
                             </h6>
-                            <ul className="flex flex-col gap-[15px]">
+                            <ul className="flex flex-col gap-[15px] text-[16px]">
                                 <li className="flex items-center gap-3">
-                                    <MdPhone /> +62 896-3013-3210
+                                    <div>
+                                        <MdPhone className="w-[20px] h-[20px]" />
+                                    </div>
+                                    <span>+62 896-3013-3210</span>
                                 </li>
                                 <li className="flex items-center gap-3">
-                                    <MdEmail /> surya.nata.aardhana@gmail.com
+                                    <div>
+                                        <MdEmail className="w-[20px] h-[20px]" />
+                                    </div>
+                                    <span>surya.nata.aardhana@gmail.com</span>
                                 </li>
                                 <li className="flex items-center gap-3">
-                                    <MdLocationOn /> Kelapa Dua, Tangerang
-                                    Regency, Indonesia
+                                    <div>
+                                        <MdLocationOn className="w-[20px] h-[20px]" />
+                                    </div>
+                                    <span>
+                                        Kelapa Dua, Tangerang Regency, Indonesia
+                                    </span>
                                 </li>
                             </ul>
                         </div>

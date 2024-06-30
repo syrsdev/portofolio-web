@@ -26,16 +26,16 @@ const Home = () => {
     return (
         <>
             <Layout>
-                <Container top="pt-[180px]">
-                    <header className="flex items-center">
-                        <div className="flex flex-col justify-center w-1/2 gap-1">
-                            <h1 className="flex flex-col gap-1 font-bold text-[34px]">
-                                <span className="text-[24px]">
+                <Container top="pt-[160px] md:pt-[180px]">
+                    <header className="flex flex-col md:items-center md:flex-row">
+                        <div className="flex flex-col justify-center w-full gap-2 md:gap-1 md:w-1/2">
+                            <h1 className="flex flex-col gap-2 md:gap-1 font-bold text-[24px] lg:text-[34px]">
+                                <span className="text-[18px] lg:text-[24px]">
                                     Hello 👋, i am
                                 </span>
                                 SURYA NATA ARDHANA
                             </h1>
-                            <p className="text-[28px] font-semibold">
+                            <p className="text-[22px] lg:text-[28px] font-semibold">
                                 And i’m a{" "}
                                 <TypeAnimation
                                     sequence={roll}
@@ -45,23 +45,24 @@ const Home = () => {
                                     repeat={Infinity}
                                 />
                             </p>
-                            <div className="flex gap-5 mt-8 w-max">
+                            <div className="flex flex-col w-full gap-5 mt-8 md:gap-3 lg:gap-5 md:w-max md:flex-row">
                                 <Button color={"bg-secondary"}>About me</Button>
                                 <Button>Download CV</Button>
                             </div>
                         </div>
-                        <div className="flex items-center justify-end w-1/2">
+                        <div className="flex items-center justify-center w-full md:justify-end md:w-fit xl:w-1/2">
                             <img
                                 src="./assets/foto.svg"
                                 alt="surya nata ardhana"
+                                className="w-9/12 mt-12 md:w-3/5 xl:w-fit md:mt-0"
                             />
                         </div>
                     </header>
 
                     <section className="my-28">
-                        <Title title={"Recently Project 🚀"} />
+                        <Title title={"Recently Projects 🚀"} />
 
-                        <div className="grid grid-cols-3 gap-9">
+                        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-9">
                             <CardProject
                                 title={"Project 1"}
                                 caption={"Project 1 description"}
@@ -88,14 +89,16 @@ const Home = () => {
                     </section>
                 </Container>
 
-                <div className="flex flex-col">
-                    <img
-                        src="./assets/waveTop.svg"
-                        alt="wave"
-                        className="relative w-full -z-0"
-                    />
+                <div className="flex flex-col ">
+                    <div className="w-full -mb-1">
+                        <img
+                            src="./assets/waveTop.svg"
+                            alt="wave"
+                            className="relative w-full -z-0"
+                        />
+                    </div>
                     <Container
-                        top="pt-0"
+                        top="py-10 xl:py-0"
                         bg="bg-gradient-to-r from-[#6C35DE] via-[#7D43E8] to-[#A364FF]"
                     >
                         <section>
@@ -103,7 +106,7 @@ const Home = () => {
                                 Technologies I’ve been working with recently
                             </Title>
 
-                            <div className="grid grid-cols-6 gap-24">
+                            <div className="grid grid-cols-2 gap-10 md:grid-cols-3 justify-items-center xl:gap-24 xl:grid-cols-6">
                                 <CardSkill
                                     title={"ReactJS"}
                                     src={"/assets/html.png"}
@@ -142,32 +145,35 @@ const Home = () => {
                             </div>
                         </section>
                     </Container>
-                    <img
-                        src="./assets/waveBottom.svg"
-                        alt="wave"
-                        className="relative w-full -mt-1 -z-10"
-                    />
+                    <div className="w-full -mt-1">
+                        <img
+                            src="./assets/waveBottom.svg"
+                            alt="wave"
+                            className="relative w-full -z-10 "
+                        />
+                    </div>
                 </div>
 
                 <Container top="pt-[100px]">
-                    <div className="flex bg-secondary rounded-[30px] px-[75px] py-[25px] gap-[100px] justify-between">
-                        <div className="flex flex-col justify-center w-3/5 gap-[15px]">
-                            <h3 className="font-bold text-[30px]">
+                    <div className="flex flex-col md:flex-row bg-secondary rounded-[30px] px-[20px] md:px-[50px] xl:px-[75px] py-[25px] gap-14 md:gap-[100px] justify-between">
+                        <div className="flex flex-col justify-center w-full md:w-3/5 gap-3 md:gap-[15px]">
+                            <h3 className="font-bold text-[24px] xl:text-[30px]">
                                 I’m available for every opportunity!
                             </h3>
-                            <p className="text-[16px]">
+                            <p className="text-[14px] xl:text-[16px]">
                                 I specialize in Front End Development and
                                 Laravel Web Development. Interested working with
                                 me? Need help on your project? I’d love to hear
                                 you about that.
                             </p>
                             <ButtonGroup
+                                width="w-full md:w-fit"
                                 sm="true"
                                 text1={"Contact me !"}
                                 text2={"My services ->"}
                             />
                         </div>
-                        <div className="flex justify-end w-auto">
+                        <div className="flex justify-center w-auto md:justify-end">
                             <img
                                 src="/assets/opportunity.png"
                                 alt="illustration"

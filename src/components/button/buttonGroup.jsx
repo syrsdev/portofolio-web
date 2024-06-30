@@ -11,7 +11,9 @@ function ButtonGroup({
     width = "max",
 }) {
     return (
-        <div className={`flex justify-between gap-5 mt-4 w-${width}`}>
+        <div
+            className={`flex justify-between flex-col md:flex-row gap-4 md:gap-5 mt-4 ${width}`}
+        >
             <Button sm={sm} href={href1}>
                 {text1}
             </Button>

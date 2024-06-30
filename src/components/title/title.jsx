@@ -3,8 +3,8 @@ import React from "react";
 function Title({ title, children }) {
     return (
         <div className="flex flex-col gap-1 mb-10 text-center text-white">
-            <h2 className="text-[28px] font-bold">{title}</h2>
-            <p className="text-[20px]">{children}</p>
+            <h2 className="text-[24px] md:text-[28px] font-bold">{title}</h2>
+            <p className="text-[16px] md:text-[20px]">{children}</p>
         </div>
     );
 }

@@ -8,9 +8,9 @@ function CardProject({ src, alt = "#", title, caption }) {
             <img
                 src={src}
                 alt={alt}
-                className="rounded-t-[15px] h-[200px] object-cover group-hover:blur-[1px]"
+                className="rounded-t-[15px] h-[180px] lg:h-[200px] object-cover group-hover:blur-[1px]"
             />
-            <div className="h-[200px] font-bold absolute text-transparent group-hover:text-white flex items-center justify-center group-hover:bg-black z-30 w-full rounded-t-[15px] group-hover:bg-opacity-60 duration-500 transition-all">
+            <div className="h-[180px] lg:h-[200px] font-bold absolute text-transparent group-hover:text-white flex items-center justify-center group-hover:bg-black z-30 w-full rounded-t-[15px] group-hover:bg-opacity-60 duration-500 transition-all">
                 Detail Project {"->"}
             </div>
             <div className="p-5 bg-secondary rounded-b-[15px] flex-col flex gap-1">
