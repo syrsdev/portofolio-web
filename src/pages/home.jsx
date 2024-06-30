@@ -1,6 +1,5 @@
 import Button from "../components/button/button";
 import ButtonGroup from "../components/button/buttonGroup";
-import ButtonSecondary from "../components/button/buttonSecondary";
 import CardProject from "../components/card/cardProject";
 import CardSkill from "../components/card/cardSkill";
 import Title from "../components/title/title";
@@ -29,13 +28,13 @@ const Home = () => {
                 <Container top="pt-[160px] md:pt-[180px]">
                     <header className="flex flex-col md:items-center md:flex-row">
                         <div className="flex flex-col justify-center w-full gap-2 md:gap-1 md:w-1/2">
-                            <h1 className="flex flex-col gap-2 md:gap-1 font-bold text-[24px] lg:text-[34px]">
-                                <span className="text-[18px] lg:text-[24px]">
+                            <h1 className="flex flex-col gap-2 md:gap-1 font-bold text-[24px] xl:text-[34px]">
+                                <span className="text-[18px] xl:text-[24px]">
                                     Hello 👋, i am
                                 </span>
                                 SURYA NATA ARDHANA
                             </h1>
-                            <p className="text-[22px] lg:text-[28px] font-semibold">
+                            <p className="text-[22px] xl:text-[28px] font-semibold">
                                 And i’m a{" "}
                                 <TypeAnimation
                                     sequence={roll}
@@ -50,7 +49,7 @@ const Home = () => {
                                 <Button>Download CV</Button>
                             </div>
                         </div>
-                        <div className="flex items-center justify-center w-full md:justify-end md:w-fit xl:w-1/2">
+                        <div className="flex items-center justify-center w-full md:justify-end md:w-fit lg:w-1/2">
                             <img
                                 src="./assets/foto.svg"
                                 alt="surya nata ardhana"

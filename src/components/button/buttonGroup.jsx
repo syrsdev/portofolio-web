@@ -12,7 +12,7 @@ function ButtonGroup({
 }) {
     return (
         <div
-            className={`flex justify-between flex-col md:flex-row gap-4 md:gap-5 mt-4 ${width}`}
+            className={`flex justify-between flex-col md:flex-row gap-4 lg:gap-5 mt-4 ${width}`}
         >
             <Button sm={sm} href={href1}>
                 {text1}
