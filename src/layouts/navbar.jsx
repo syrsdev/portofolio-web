@@ -1,5 +1,14 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import {
+    BiHome,
+    BiSolidHome,
+    BiSolidMessageRoundedDots,
+    BiSolidRocket,
+    BiSolidUser,
+    BiSolidWrench,
+    BiUser,
+} from "react-icons/bi";
 
 function Navbar() {
     const [navActive, setNavActive] = useState(false);
@@ -17,7 +26,7 @@ function Navbar() {
     return (
         <>
             <nav
-                className={`flex justify-between items-center text-white py-8 px-[25px] lg:px-[55px] xl:px-[80px] 2xl:px-[95px] font-bold fixed w-full z-50 transition-all ${
+                className={`flex justify-between items-center text-white py-8 px-[25px] lg:px-[55px] xl:px-[80px] 2xl:px-[95px] font-bold absolute md:fixed w-full z-50 transition-all ${
                     navActive
                         ? "duration-1000 bg-gradient-to-r from-[#6C35DE] via-[#7D43E8] to-[#A364FF] shadow-xl shadow-slate-700 "
                         : "duration-500 bg-transparent"
@@ -41,12 +50,12 @@ function Navbar() {
                         <Link to={"/under-construction"}>Contact</Link>
                     </li>
                 </ul>
-                <label className="flex flex-col w-8 gap-2 md:hidden ">
+                {/* <label className="flex flex-col w-8 gap-2 md:hidden ">
                     <input className="hidden peer" type="checkbox" />
                     <div className="rounded-2xl h-[3px] w-1/2 bg-white duration-500 peer-checked:rotate-[225deg] origin-right peer-checked:-translate-x-[12px] peer-checked:-translate-y-[1px]"></div>
                     <div className="rounded-2xl h-[3px] w-full bg-white duration-500 peer-checked:-rotate-45"></div>
                     <div className="rounded-2xl h-[3px] w-1/2 bg-white duration-500 place-self-end peer-checked:rotate-[225deg] origin-left peer-checked:translate-x-[12px] peer-checked:translate-y-[1px]"></div>
-                </label>
+                </label> */}
             </nav>
             {!navActive && (
                 <img
@@ -55,6 +64,41 @@ function Navbar() {
                     className="absolute w-full -z-10 h-[123px] md:h-[115px] object-cover"
                 />
             )}
+
+            <nav className="md:hidden font-bold px-5 py-4 rounded-full fixed bottom-3 w-full z-50 bg-secondary text-[12px]">
+                <ul className="flex items-center justify-between">
+                    <li className="flex flex-col items-center gap-1">
+                        <span>
+                            <BiSolidHome className="text-[23px]" />
+                        </span>
+                        <Link>Home</Link>
+                    </li>
+                    <li className="flex flex-col items-center gap-1">
+                        <span>
+                            <BiSolidUser className="text-[23px]" />
+                        </span>
+                        <Link>About</Link>
+                    </li>
+                    <li className="flex flex-col items-center gap-1">
+                        <span>
+                            <BiSolidRocket className="text-[23px]" />
+                        </span>
+                        <Link>Portfolio</Link>
+                    </li>
+                    <li className="flex flex-col items-center gap-1">
+                        <span>
+                            <BiSolidWrench className="text-[23px]" />
+                        </span>
+                        <Link>Services</Link>
+                    </li>
+                    <li className="flex flex-col items-center gap-1">
+                        <span>
+                            <BiSolidMessageRoundedDots className="text-[23px]" />
+                        </span>
+                        <Link>Contacts</Link>
+                    </li>
+                </ul>
+            </nav>
         </>
     );
 }
