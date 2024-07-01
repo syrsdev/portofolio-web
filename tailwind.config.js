@@ -12,7 +12,7 @@ export default {
         'tertiary': "#6C35DE",
       },
       fontFamily: {
-        'inter': ['Inter', 'sans-serif'],
+        'sora': ['Sora', 'sans-serif'],
       },
       textColor: {
         'primary': "#6C35DE",

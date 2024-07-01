@@ -20,7 +20,7 @@ function Copyright() {
                         <FaInstagram className="w-[25px] h-[25px]" />
                     </a>
                 </div>
-                <div className="w-max font-bold text-[10px] md:text-[12px]">
+                <div className="w-max font-semibold text-[10px] md:text-[12px]">
                     ©2024 Surya Nata Ardhana | All rights reserved
                 </div>
             </div>
