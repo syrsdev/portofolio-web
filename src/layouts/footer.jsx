@@ -53,7 +53,7 @@ function Footer() {
                                     <Link to={"/"}>Home</Link>
                                 </li>
                                 <li>
-                                    <Link to={"/under-construction"}>
+                                    <Link to={"/about"}>
                                         About
                                     </Link>
                                 </li>

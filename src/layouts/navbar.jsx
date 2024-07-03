@@ -38,7 +38,7 @@ function Navbar() {
                         <Link to={"/"}>Home</Link>
                     </li>
                     <li>
-                        <Link to={"/under-construction"}>About</Link>
+                        <Link to={"/about"}>About</Link>
                     </li>
                     <li>
                         <Link to={"/under-construction"}>Portfolio</Link>
@@ -67,36 +67,39 @@ function Navbar() {
 
             <nav className="md:hidden font-bold px-5 py-4 rounded-full fixed bottom-3 w-full z-50 bg-secondary text-[12px]">
                 <ul className="flex items-center justify-between">
-                    <li className="flex flex-col items-center gap-1">
+                    <Link to={"/"} className="flex flex-col items-center gap-1">
                         <span>
                             <BiSolidHome className="text-[23px]" />
                         </span>
-                        <Link>Home</Link>
-                    </li>
-                    <li className="flex flex-col items-center gap-1">
+                        <li>Home</li>
+                    </Link>
+                    <Link
+                        to={"/about"}
+                        className="flex flex-col items-center gap-1"
+                    >
                         <span>
                             <BiSolidUser className="text-[23px]" />
                         </span>
-                        <Link>About</Link>
-                    </li>
-                    <li className="flex flex-col items-center gap-1">
+                        <li>About</li>
+                    </Link>
+                    <Link to={"/"} className="flex flex-col items-center gap-1">
                         <span>
                             <BiSolidRocket className="text-[23px]" />
                         </span>
-                        <Link>Portfolio</Link>
-                    </li>
-                    <li className="flex flex-col items-center gap-1">
+                        <li>Portfolio</li>
+                    </Link>
+                    <Link to={"/"} className="flex flex-col items-center gap-1">
                         <span>
                             <BiSolidWrench className="text-[23px]" />
                         </span>
-                        <Link>Services</Link>
-                    </li>
-                    <li className="flex flex-col items-center gap-1">
+                        <li>Services</li>
+                    </Link>
+                    <Link to={"/"} className="flex flex-col items-center gap-1">
                         <span>
                             <BiSolidMessageRoundedDots className="text-[23px]" />
                         </span>
-                        <Link>Contacts</Link>
-                    </li>
+                        <li>Contacts</li>
+                    </Link>
                 </ul>
             </nav>
         </>
