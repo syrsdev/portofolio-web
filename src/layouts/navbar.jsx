@@ -22,6 +22,8 @@ function Navbar() {
             }
         };
         window.addEventListener("scroll", scroll);
+
+        scroll();
     }, []);
     return (
         <>
@@ -61,7 +63,7 @@ function Navbar() {
                 <img
                     src="./assets/navbarWave.svg"
                     alt="wave"
-                    className="absolute w-full -z-10 h-[123px] md:h-[115px] object-cover"
+                    className="absolute w-full h-[123px] md:h-[115px] object-cover"
                 />
             )}
 

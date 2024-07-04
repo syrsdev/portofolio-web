@@ -1,9 +1,9 @@
 import React from "react";
 
-function Title({ title, children }) {
+function Title({ title, children, text = "text-center", mb = "mb-10" }) {
     return (
-        <div className="flex flex-col gap-1 mb-10 text-center text-white">
-            <h2 className="text-[24px] md:text-[28px] font-bold">{title}</h2>
+        <div className={`flex flex-col gap-1 ${mb} ${text} text-white`}>
+            <h2 className="text-[24px] lg:text-[28px] font-bold">{title}</h2>
             <p className="text-[16px] md:text-[20px]">{children}</p>
         </div>
     );
