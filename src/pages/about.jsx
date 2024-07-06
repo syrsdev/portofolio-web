@@ -3,6 +3,8 @@ import Layout from "../layouts/layout";
 import Container from "../layouts/container";
 import Title from "../components/title/title";
 import { BiSolidUser } from "react-icons/bi";
+import { PiBuildingOfficeBold } from "react-icons/pi";
+import { SlLocationPin } from "react-icons/sl";
 
 function About() {
     const [tab, setTab] = useState(false);
@@ -76,8 +78,39 @@ function About() {
                                         </li>
                                     </ol>
                                 </div>
-                                <div className="flex flex-col w-fit">
-                                    <Title title="Work Experience" />
+                                <div className="flex flex-col w-full lg:w-fit">
+                                    <Title
+                                        title="Work Experience"
+                                        mb="mb-5"
+                                        text="text-start md:text-center"
+                                    />
+                                    <div className="flex flex-col md:flex-row justify-between gap-5 lg:gap-8 text-[12px] mb-7">
+                                        <div className="flex flex-col justify-between gap-3 w-fit">
+                                            <h3 className="font-bold text-[20px]">
+                                                Frontend Developer
+                                            </h3>
+                                            <div className="flex items-center gap-3 ">
+                                                <div className="flex items-center gap-1">
+                                                    <p className="text-[16px]">
+                                                        <PiBuildingOfficeBold />
+                                                    </p>
+                                                    <p>PT. Timpat digital</p>
+                                                </div>
+                                                <div className="flex items-center gap-1">
+                                                    <p className="text-[16px]">
+                                                        <SlLocationPin />
+                                                    </p>
+                                                    <p>Remote - Tangerang</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="flex flex-row items-center justify-between gap-3 md:items-end md:flex-col w-max">
+                                            <span className="px-5 py-1 rounded-full w-fit bg-tertiary">
+                                                Intern
+                                            </span>
+                                            <p>Apr 2022 - July 2022</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         )}
