@@ -174,7 +174,7 @@ const Home = () => {
                         </div>
                         <div className="flex justify-center w-auto md:justify-end">
                             <img
-                                src="/assets/opportunity.png"
+                                src="/assets/opportunity.svg"
                                 alt="illustration"
                                 className="object-contain w-full max-w-[280px]"
                             />
