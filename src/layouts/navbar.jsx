@@ -49,7 +49,7 @@ function Navbar() {
                         <Link to={"/under-construction"}>Services</Link>
                     </li>
                     <li>
-                        <Link to={"/under-construction"}>Contact</Link>
+                        <Link to={"/contacts"}>Contact</Link>
                     </li>
                 </ul>
                 {/* <label className="flex flex-col w-8 gap-2 md:hidden ">
@@ -96,7 +96,10 @@ function Navbar() {
                         </span>
                         <li>Services</li>
                     </Link>
-                    <Link to={"/"} className="flex flex-col items-center gap-1">
+                    <Link
+                        to={"/contacts"}
+                        className="flex flex-col items-center gap-1"
+                    >
                         <span>
                             <BiSolidMessageRoundedDots className="text-[23px]" />
                         </span>
