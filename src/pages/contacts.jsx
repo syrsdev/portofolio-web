@@ -54,7 +54,7 @@ function Contacts() {
                             </h3>
                             <div className="flex flex-col w-full gap-5 my-5 md:gap-3 lg:gap-5 md:w-full md:flex-row">
                                 <ButtonContact
-                                    color="bg-slate-500"
+                                    color="bg-slate-700"
                                     href="https://github.com/Suryanataa"
                                 >
                                     <span className="text-[20px]">
