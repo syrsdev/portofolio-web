@@ -28,13 +28,19 @@ function Contacts() {
                                 Send me a message
                             </h3>
                             <div className="flex flex-col w-full gap-5 mt-5 md:gap-3 lg:gap-5 md:w-full md:flex-row">
-                                <ButtonContact color="bg-red-500">
+                                <ButtonContact
+                                    color="bg-red-500"
+                                    href="mailto:/surya.nata.aardhana@gmail.com"
+                                >
                                     <span className="text-[20px]">
                                         <MdOutlineEmail />
                                     </span>
                                     Email
                                 </ButtonContact>
-                                <ButtonContact color="bg-[#00B944]">
+                                <ButtonContact
+                                    color="bg-[#00B944]"
+                                    href="https://wa.me/+6289630133210"
+                                >
                                     <span className="text-[20px]">
                                         <FaWhatsapp />
                                     </span>
@@ -47,20 +53,29 @@ function Contacts() {
                                 Or find me on social media
                             </h3>
                             <div className="flex flex-col w-full gap-5 my-5 md:gap-3 lg:gap-5 md:w-full md:flex-row">
-                                <ButtonContact color="bg-slate-500">
+                                <ButtonContact
+                                    color="bg-slate-500"
+                                    href="https://github.com/Suryanataa"
+                                >
                                     <span className="text-[20px]">
                                         <FaGithub />
                                     </span>
                                     Github
                                 </ButtonContact>
-                                <ButtonContact color="bg-pink-600">
+                                <ButtonContact
+                                    color="bg-pink-600"
+                                    href="https://instagram.com/nata_ardhana"
+                                >
                                     <span className="text-[20px]">
                                         <FaInstagram />
                                     </span>
                                     Instagram
                                 </ButtonContact>
                             </div>
-                            <ButtonContact color="bg-blue-600">
+                            <ButtonContact
+                                color="bg-blue-600"
+                                href="https://www.linkedin.com/in/suryanataardhana/"
+                            >
                                 <span className="text-[20px]">
                                     <FaLinkedin />
                                 </span>

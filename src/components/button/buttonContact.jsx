@@ -9,6 +9,7 @@ function ButtonContact({
 }) {
     return (
         <a
+            target="_blank"
             href={href}
             className={`px-12 text-center cursor-pointer text-[16px] flex items-center justify-center gap-2 font-bold text-white ${color} rounded-[10px] hover:shadow-[7px_5px_56px_-14px_#A364FF] transition-all duration-300 active:scale-90 active:shadow-[7px_5px_56px_-10px_#A364FF] w-full text-nowrap py-3`}
         >
