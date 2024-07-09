@@ -16,7 +16,7 @@ function Navbar() {
 
     useEffect(() => {
         let scroll = () => {
-            if (window.scrollY > 0) {
+            if (window.scrollY > 15) {
                 setNavActive(true);
             } else {
                 setNavActive(false);
