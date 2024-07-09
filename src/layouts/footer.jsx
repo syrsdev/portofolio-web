@@ -50,23 +50,44 @@ function Footer() {
                             <h6 className="font-bold text-[20px] ">Links</h6>
                             <ul className="flex flex-col gap-[15px]">
                                 <li>
-                                    <Link to={"/"}>Home</Link>
+                                    <Link
+                                        className="hover:text-primary"
+                                        to={"/"}
+                                    >
+                                        Home
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to={"/about"}>About</Link>
+                                    <Link
+                                        className="hover:text-primary"
+                                        to={"/about"}
+                                    >
+                                        About
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to={"/under-construction"}>
+                                    <Link
+                                        className="hover:text-primary"
+                                        to={"/under-construction"}
+                                    >
                                         Portfolio
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to={"/under-construction"}>
+                                    <Link
+                                        className="hover:text-primary"
+                                        to={"/under-construction"}
+                                    >
                                         Services
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to={"/contacts"}>Contacts</Link>
+                                    <Link
+                                        className="hover:text-primary"
+                                        to={"/contacts"}
+                                    >
+                                        Contacts
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
