@@ -45,7 +45,9 @@ const Home = () => {
                                 />
                             </p>
                             <div className="flex flex-col w-full gap-5 mt-8 md:gap-3 lg:gap-5 md:w-max md:flex-row">
-                                <Button color={"bg-secondary"}>About me</Button>
+                                <Button href={"/about"} color={"bg-secondary"}>
+                                    About me
+                                </Button>
                                 <Button>Download CV</Button>
                             </div>
                         </div>
