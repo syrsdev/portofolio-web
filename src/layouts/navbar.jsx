@@ -44,7 +44,7 @@ function Navbar() {
                                     ? "before:w-full before:absolute before:h-1 before:-bottom-2 before:rounded-full before:bg-white"
                                     : "before:w-full before:absolute before:bg-transparent before:h-1 before:hover:-bottom-2 before:bottom-0 before:rounded-full before:hover:bg-white before:duration-500 before:transition-all"
                             }`}
-                            onClick={() => setLink("home")}
+                            onClick={() => setLink("/")}
                             to={"/"}
                         >
                             Home
@@ -120,7 +120,15 @@ function Navbar() {
 
             <nav className="md:hidden font-bold px-5 py-4 rounded-full fixed bottom-3 w-full z-50 bg-secondary text-[12px]">
                 <ul className="flex items-center justify-between">
-                    <Link to={"/"} className="flex flex-col items-center gap-1">
+                    <Link
+                        to={"/"}
+                        className={`relative flex flex-col items-center gap-1 ${
+                            link == "/"
+                                ? "text-primary"
+                                : "text-white hover:text-primary duration-500 transition-all"
+                        }`}
+                        onClick={() => setLink("/")}
+                    >
                         <span>
                             <BiSolidHome className="text-[23px]" />
                         </span>
@@ -128,20 +136,41 @@ function Navbar() {
                     </Link>
                     <Link
                         to={"/about"}
-                        className="flex flex-col items-center gap-1"
+                        className={`relative flex flex-col items-center gap-1 ${
+                            link == "/about"
+                                ? "text-primary"
+                                : "text-white hover:text-primary duration-500 transition-all"
+                        }`}
+                        onClick={() => setLink("/about")}
                     >
                         <span>
                             <BiSolidUser className="text-[23px]" />
                         </span>
                         <li>About</li>
                     </Link>
-                    <Link to={"/"} className="flex flex-col items-center gap-1">
+                    <Link
+                        to={"/"}
+                        className={`relative flex flex-col items-center gap-1 ${
+                            link == "/portfolio"
+                                ? "text-primary"
+                                : "text-white hover:text-primary duration-500 transition-all"
+                        }`}
+                        onClick={() => setLink("/portfolio")}
+                    >
                         <span>
                             <BiSolidRocket className="text-[23px]" />
                         </span>
                         <li>Portfolio</li>
                     </Link>
-                    <Link to={"/"} className="flex flex-col items-center gap-1">
+                    <Link
+                        to={"/"}
+                        className={`relative flex flex-col items-center gap-1 ${
+                            link == "/services"
+                                ? "text-primary"
+                                : "text-white hover:text-primary duration-500 transition-all"
+                        }`}
+                        onClick={() => setLink("/services")}
+                    >
                         <span>
                             <BiSolidWrench className="text-[23px]" />
                         </span>
@@ -149,7 +178,12 @@ function Navbar() {
                     </Link>
                     <Link
                         to={"/contacts"}
-                        className="flex flex-col items-center gap-1"
+                        className={`relative flex flex-col items-center gap-1 ${
+                            link == "/contacts"
+                                ? "text-primary"
+                                : "text-white hover:text-primary duration-500 transition-all"
+                        }`}
+                        onClick={() => setLink("/contacts")}
                     >
                         <span>
                             <BiSolidMessageRoundedDots className="text-[23px]" />
