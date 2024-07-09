@@ -12,6 +12,7 @@ import {
 
 function Navbar() {
     const [navActive, setNavActive] = useState(false);
+    const [link, setLink] = useState(window.location.pathname);
 
     useEffect(() => {
         let scroll = () => {
@@ -37,19 +38,69 @@ function Navbar() {
                 <p className="text-[16px]">SURYA'S PORTFOLIO</p>
                 <ul className="md:flex hidden md:gap-7 xl:gap-10 text-[14px] xl:text-[16px] items-center">
                     <li>
-                        <Link to={"/"}>Home</Link>
+                        <Link
+                            className={`relative ${
+                                link == "/"
+                                    ? "before:w-full before:absolute before:h-1 before:-bottom-2 before:rounded-full before:bg-white"
+                                    : "before:w-full before:absolute before:bg-transparent before:h-1 before:hover:-bottom-2 before:bottom-0 before:rounded-full before:hover:bg-white before:duration-500 before:transition-all"
+                            }`}
+                            onClick={() => setLink("home")}
+                            to={"/"}
+                        >
+                            Home
+                        </Link>
                     </li>
                     <li>
-                        <Link to={"/about"}>About</Link>
+                        <Link
+                            className={`relative ${
+                                link == "/about"
+                                    ? "before:w-full before:absolute before:h-1 before:-bottom-2 before:rounded-full before:bg-white"
+                                    : "before:w-full before:absolute before:bg-transparent before:h-1 before:hover:-bottom-2 before:bottom-0 before:rounded-full before:hover:bg-white before:duration-500 before:transition-all"
+                            }`}
+                            onClick={() => setLink("about")}
+                            to={"/about"}
+                        >
+                            About
+                        </Link>
                     </li>
                     <li>
-                        <Link to={"/under-construction"}>Portfolio</Link>
+                        <Link
+                            className={`relative ${
+                                link == "/portfolio"
+                                    ? "before:w-full before:absolute before:h-1 before:-bottom-2 before:rounded-full before:bg-white"
+                                    : "before:w-full before:absolute before:bg-transparent before:h-1 before:hover:-bottom-2 before:bottom-0 before:rounded-full before:hover:bg-white before:duration-500 before:transition-all"
+                            }`}
+                            onClick={() => setLink("portfolio")}
+                            to={"/under-construction"}
+                        >
+                            Portfolio
+                        </Link>
                     </li>
                     <li>
-                        <Link to={"/under-construction"}>Services</Link>
+                        <Link
+                            className={`relative ${
+                                link == "/services"
+                                    ? "before:w-full before:absolute before:h-1 before:-bottom-2 before:rounded-full before:bg-white"
+                                    : "before:w-full before:absolute before:bg-transparent before:h-1 before:hover:-bottom-2 before:bottom-0 before:rounded-full before:hover:bg-white before:duration-500 before:transition-all"
+                            }`}
+                            onClick={() => setLink("services")}
+                            to={"/under-construction"}
+                        >
+                            Services
+                        </Link>
                     </li>
                     <li>
-                        <Link to={"/contacts"}>Contact</Link>
+                        <Link
+                            className={`relative ${
+                                link == "/contacts"
+                                    ? "before:w-full before:absolute before:h-1 before:-bottom-2 before:rounded-full before:bg-white"
+                                    : "before:w-full before:absolute before:bg-transparent before:h-1 before:hover:-bottom-2 before:bottom-0 before:rounded-full before:hover:bg-white before:duration-500 before:transition-all"
+                            }`}
+                            onClick={() => setLink("contacts")}
+                            to={"/contacts"}
+                        >
+                            Contact
+                        </Link>
                     </li>
                 </ul>
                 {/* <label className="flex flex-col w-8 gap-2 md:hidden ">
