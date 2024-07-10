@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import {
-    BiHome,
     BiSolidHome,
     BiSolidMessageRoundedDots,
     BiSolidRocket,
     BiSolidUser,
     BiSolidWrench,
-    BiUser,
 } from "react-icons/bi";
 
 function Navbar() {
