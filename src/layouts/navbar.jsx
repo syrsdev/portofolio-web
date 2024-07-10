@@ -23,6 +23,9 @@ function Navbar() {
             }
         };
         window.addEventListener("scroll", scroll);
+        document.getElementById("scroll").onclick = () => {
+            window.scrollTo(0, 0);
+        };
 
         scroll();
     }, []);
@@ -36,7 +39,10 @@ function Navbar() {
                 } `}
             >
                 <p className="text-[16px]">SURYA'S PORTFOLIO</p>
-                <ul className="md:flex hidden md:gap-7 xl:gap-10 text-[14px] xl:text-[16px] items-center">
+                <ul
+                    className="md:flex hidden md:gap-7 xl:gap-10 text-[14px] xl:text-[16px] items-center"
+                    id="scroll"
+                >
                     <li>
                         <Link
                             className={`relative ${
@@ -57,7 +63,7 @@ function Navbar() {
                                     ? "before:w-full before:absolute before:h-1 before:-bottom-2 before:rounded-full before:bg-white"
                                     : "before:w-full before:absolute before:bg-transparent before:h-1 before:hover:-bottom-2 before:bottom-0 before:rounded-full before:hover:bg-white before:duration-500 before:transition-all"
                             }`}
-                            onClick={() => setLink("about")}
+                            onClick={() => setLink("/about")}
                             to={"/about"}
                         >
                             About
@@ -70,7 +76,7 @@ function Navbar() {
                                     ? "before:w-full before:absolute before:h-1 before:-bottom-2 before:rounded-full before:bg-white"
                                     : "before:w-full before:absolute before:bg-transparent before:h-1 before:hover:-bottom-2 before:bottom-0 before:rounded-full before:hover:bg-white before:duration-500 before:transition-all"
                             }`}
-                            onClick={() => setLink("portfolio")}
+                            onClick={() => setLink("/portfolio")}
                             to={"/under-construction"}
                         >
                             Portfolio
@@ -83,7 +89,7 @@ function Navbar() {
                                     ? "before:w-full before:absolute before:h-1 before:-bottom-2 before:rounded-full before:bg-white"
                                     : "before:w-full before:absolute before:bg-transparent before:h-1 before:hover:-bottom-2 before:bottom-0 before:rounded-full before:hover:bg-white before:duration-500 before:transition-all"
                             }`}
-                            onClick={() => setLink("services")}
+                            onClick={() => setLink("/services")}
                             to={"/under-construction"}
                         >
                             Services
@@ -96,7 +102,7 @@ function Navbar() {
                                     ? "before:w-full before:absolute before:h-1 before:-bottom-2 before:rounded-full before:bg-white"
                                     : "before:w-full before:absolute before:bg-transparent before:h-1 before:hover:-bottom-2 before:bottom-0 before:rounded-full before:hover:bg-white before:duration-500 before:transition-all"
                             }`}
-                            onClick={() => setLink("contacts")}
+                            onClick={() => setLink("/contacts")}
                             to={"/contacts"}
                         >
                             Contact
