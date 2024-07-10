@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Copyright from "../components/copyright";
 import Container from "./container";
 import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 function Footer() {
+    useEffect(() => {
+        document.getElementById("scroll3").onclick = () => {
+            window.scrollTo(0, 0);
+        };
+    }, []);
     return (
         <footer className="mt-[60px] border-t-2 border-primary text-wrap">
             <Container top="pt-[50px]">
@@ -48,7 +53,10 @@ function Footer() {
                         </div>
                         <div className="flex flex-col gap-[15px]">
                             <h6 className="font-bold text-[20px] ">Links</h6>
-                            <ul className="flex flex-col gap-[15px]">
+                            <ul
+                                className="flex flex-col gap-[15px]"
+                                id="scroll3"
+                            >
                                 <li>
                                     <Link
                                         className="hover:text-primary"

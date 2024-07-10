@@ -24,6 +24,9 @@ function Navbar() {
         document.getElementById("scroll").onclick = () => {
             window.scrollTo(0, 0);
         };
+        document.getElementById("scroll2").onclick = () => {
+            window.scrollTo(0, 0);
+        };
 
         scroll();
     }, []);
@@ -122,8 +125,11 @@ function Navbar() {
                 />
             )}
 
-            <nav className="md:hidden font-bold px-5 py-4 rounded-full fixed bottom-3 w-full z-50 bg-secondary text-[12px]">
-                <ul className="flex items-center justify-between">
+            <nav
+                id="scroll"
+                className="md:hidden font-bold px-5 py-4 rounded-full fixed bottom-3 w-full z-50 bg-secondary text-[12px]"
+            >
+                <ul className="flex items-center justify-between" id="scroll2">
                     <Link
                         to={"/"}
                         className={`relative flex flex-col items-center gap-1 ${
