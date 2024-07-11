@@ -171,6 +171,7 @@ const Home = () => {
                                 width="w-full md:w-fit"
                                 sm="true"
                                 text1={"Contact me !"}
+                                href1={"/contacts"}
                                 text2={"My services ->"}
                             />
                         </div>
