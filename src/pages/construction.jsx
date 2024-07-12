@@ -5,7 +5,7 @@ import Layout from "../layouts/layout";
 function Construction() {
     return (
         <Layout>
-            <div className="flex flex-col items-center justify-center min-h-screen gap-5">
+            <div className="flex flex-col items-center justify-center min-h-screen gap-5 text-center">
                 <img
                     src="./assets/construc.svg"
                     alt="illustration"
