@@ -36,7 +36,7 @@ function About() {
                                 <Title text="start" title="About Me" />
                             </>
                         ) : (
-                            <div className="flex flex-col justify-between gap-10 lg:flex-row">
+                            <div className="flex flex-col justify-between gap-10 md:flex-col-reverse lg:flex-row">
                                 <div className="w-fit">
                                     <Title
                                         title="Education"
