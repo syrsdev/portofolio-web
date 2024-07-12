@@ -85,7 +85,7 @@ const Home = () => {
                         </div>
 
                         <div className="mx-auto mt-16 w-max">
-                            <Button>More Projects</Button>
+                            <Button href={"/portfolio"}>More Projects</Button>
                         </div>
                     </section>
                 </Container>
