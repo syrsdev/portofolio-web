@@ -76,7 +76,7 @@ function Footer() {
                                 <li>
                                     <Link
                                         className="hover:text-primary"
-                                        to={"/under-construction"}
+                                        to={"/portfolio"}
                                     >
                                         Portfolio
                                     </Link>

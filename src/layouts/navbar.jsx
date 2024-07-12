@@ -78,7 +78,7 @@ function Navbar() {
                                     : "before:w-full before:absolute before:bg-transparent before:h-1 before:hover:-bottom-2 before:bottom-0 before:rounded-full before:hover:bg-white before:duration-500 before:transition-all"
                             }`}
                             onClick={() => setLink("/portfolio")}
-                            to={"/under-construction"}
+                            to={"/portfolio"}
                         >
                             Portfolio
                         </Link>
@@ -86,11 +86,11 @@ function Navbar() {
                     <li>
                         <Link
                             className={`relative ${
-                                link == "/services"
+                                link == "/under-construction"
                                     ? "before:w-full before:absolute before:h-1 before:-bottom-2 before:rounded-full before:bg-white"
                                     : "before:w-full before:absolute before:bg-transparent before:h-1 before:hover:-bottom-2 before:bottom-0 before:rounded-full before:hover:bg-white before:duration-500 before:transition-all"
                             }`}
-                            onClick={() => setLink("/services")}
+                            onClick={() => setLink("/under-construction")}
                             to={"/under-construction"}
                         >
                             Services
@@ -159,7 +159,7 @@ function Navbar() {
                         <li>About</li>
                     </Link>
                     <Link
-                        to={"/"}
+                        to={"/portfolio"}
                         className={`relative flex flex-col items-center gap-1 ${
                             link == "/portfolio"
                                 ? "text-primary"
@@ -173,13 +173,13 @@ function Navbar() {
                         <li>Portfolio</li>
                     </Link>
                     <Link
-                        to={"/"}
+                        to={"/under-construction"}
                         className={`relative flex flex-col items-center gap-1 ${
-                            link == "/services"
+                            link == "/under-construction"
                                 ? "text-primary"
                                 : "text-white hover:text-primary duration-500 transition-all"
                         }`}
-                        onClick={() => setLink("/services")}
+                        onClick={() => setLink("/under-construction")}
                     >
                         <span>
                             <BiSolidWrench className="text-[23px]" />
