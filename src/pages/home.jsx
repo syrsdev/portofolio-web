@@ -6,6 +6,7 @@ import Title from "../components/title/title";
 import Container from "../layouts/container";
 import Layout from "../layouts/layout";
 import { TypeAnimation } from "react-type-animation";
+import cv from "../assets/CV-SURYA NATA ARDHANA.pdf";
 
 const Home = () => {
     let roll = [
@@ -48,7 +49,12 @@ const Home = () => {
                                 <Button href={"/about"} color={"bg-secondary"}>
                                     About me
                                 </Button>
-                                <Button>Download CV</Button>
+                                <Button
+                                    href={cv}
+                                    download={"cv-surya nata ardhana.pdf"}
+                                >
+                                    Download CV
+                                </Button>
                             </div>
                         </div>
                         <div className="flex items-center justify-center w-full md:justify-end md:w-fit lg:w-1/2">
