@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import Copyright from "../components/copyright";
 import Container from "./container";
 import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { FooterData } from "../context/footerContext";
 
 function Footer() {
     useEffect(() => {
@@ -10,6 +11,9 @@ function Footer() {
             window.scrollTo(0, 0);
         };
     }, []);
+
+    const { data } = useContext(FooterData);
+    console.log(data);
     return (
         <footer className="mt-[60px] border-t-2 border-primary text-wrap">
             <Container top="pt-[50px]">
@@ -33,20 +37,26 @@ function Footer() {
                                     <div>
                                         <MdPhone className="w-[20px] h-[20px]" />
                                     </div>
-                                    <span>+62 896-3013-3210</span>
+                                    <span>
+                                        {data == null
+                                            ? "..."
+                                            : "+62 " + data.telp}
+                                    </span>
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <div>
                                         <MdEmail className="w-[20px] h-[20px]" />
                                     </div>
-                                    <span>surya.nata.aardhana@gmail.com</span>
+                                    <span>
+                                        {data == null ? "..." : data.email}
+                                    </span>
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <div>
                                         <MdLocationOn className="w-[20px] h-[20px]" />
                                     </div>
                                     <span>
-                                        Kelapa Dua, Tangerang Regency, Indonesia
+                                        {data == null ? "..." : data.address}
                                     </span>
                                 </li>
                             </ul>

@@ -8,6 +8,7 @@ import Construction from "./pages/construction";
 import About from "./pages/about";
 import Contacts from "./pages/contacts";
 import Portfolio from "./pages/portfolio";
+import FooterContextProvider from "./context/footerContext";
 
 const router = createBrowserRouter([
     {
@@ -35,6 +36,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-        <RouterProvider router={router} />
+        <FooterContextProvider>
+            <RouterProvider router={router} />
+        </FooterContextProvider>
     </React.StrictMode>
 );
