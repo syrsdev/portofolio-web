@@ -13,6 +13,8 @@ function Footer() {
     }, []);
 
     const { data } = useContext(FooterData);
+    console.log(data);
+
     return (
         <footer className="mt-[60px] border-t-2 border-primary text-wrap">
             <Container top="pt-[50px]">
@@ -37,7 +39,7 @@ function Footer() {
                                         <MdPhone className="w-[20px] h-[20px]" />
                                     </div>
                                     <span>
-                                        {data == null
+                                        {data == null || data.telp == null
                                             ? "..."
                                             : "+62 " + data.telp}
                                     </span>
@@ -47,7 +49,9 @@ function Footer() {
                                         <MdEmail className="w-[20px] h-[20px]" />
                                     </div>
                                     <span>
-                                        {data == null ? "..." : data.email}
+                                        {data == null || data.email == null
+                                            ? "..."
+                                            : data.email}
                                     </span>
                                 </li>
                                 <li className="flex items-center gap-3">
@@ -55,7 +59,9 @@ function Footer() {
                                         <MdLocationOn className="w-[20px] h-[20px]" />
                                     </div>
                                     <span>
-                                        {data == null ? "..." : data.address}
+                                        {data == null || data.address == null
+                                            ? "..."
+                                            : data.address}
                                     </span>
                                 </li>
                             </ul>
