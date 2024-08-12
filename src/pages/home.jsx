@@ -7,6 +7,8 @@ import Container from "../layouts/container";
 import Layout from "../layouts/layout";
 import { TypeAnimation } from "react-type-animation";
 import cv from "../assets/CV-SURYA NATA ARDHANA.pdf";
+import { useEffect, useState } from "react";
+import { getAllSkill } from "../services/skills.service";
 
 const Home = () => {
     let roll = [
@@ -23,6 +25,13 @@ const Home = () => {
         "Laravel Fullstack Developer",
         2000,
     ];
+    const [skill, setSkill] = useState([]);
+    useEffect(() => {
+        getAllSkill((res) => {
+            setSkill(res);
+        });
+    }, []);
+    console.log(skill);
     return (
         <>
             <Layout>
@@ -114,41 +123,15 @@ const Home = () => {
                             </Title>
 
                             <div className="grid grid-cols-2 gap-10 md:grid-cols-3 justify-items-center xl:gap-24 xl:grid-cols-6">
-                                <CardSkill
-                                    title={"ReactJS"}
-                                    src={"/assets/html.png"}
-                                    alt={"#"}
-                                />
-                                <CardSkill
-                                    title={"ReactJS"}
-                                    src={"/assets/html.png"}
-                                    alt={"#"}
-                                />
-                                <CardSkill
-                                    title={"ReactJS"}
-                                    src={"/assets/html.png"}
-                                    alt={"#"}
-                                />
-                                <CardSkill
-                                    title={"ReactJS"}
-                                    src={"/assets/html.png"}
-                                    alt={"#"}
-                                />
-                                <CardSkill
-                                    title={"ReactJS"}
-                                    src={"/assets/html.png"}
-                                    alt={"#"}
-                                />
-                                <CardSkill
-                                    title={"ReactJS"}
-                                    src={"/assets/html.png"}
-                                    alt={"#"}
-                                />
-                                <CardSkill
-                                    title={"ReactJS"}
-                                    src={"/assets/html.png"}
-                                    alt={"#"}
-                                />
+                                {skill.length != 0 &&
+                                    skill.map((item) => (
+                                        <CardSkill
+                                            key={item.id}
+                                            title={item.skill}
+                                            src={item.image}
+                                            alt={item.skill}
+                                        />
+                                    ))}
                             </div>
                         </section>
                     </Container>
