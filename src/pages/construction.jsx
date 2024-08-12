@@ -12,7 +12,7 @@ function Construction() {
                     width={"250px"}
                 />
                 <h1 className="font-bold text-[20px]">
-                    Pages Under Construction, Please comeback later.
+                    Page Under Construction, Please comeback later.
                 </h1>
                 <Link className="text-primary" to="/">
                     Back to home
