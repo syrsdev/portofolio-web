@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Container from "../layouts/container";
 import Layout from "../layouts/layout";
 import Title from "../components/title/title";
 import ButtonContact from "../components/button/buttonContact";
 import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
+import { getContacts } from "../services/contacs.service";
 
 function Contacts() {
+    const [contact, setContact] = useState({});
+    useEffect(() => {
+        getContacts((data) => {
+            setContact(data);
+        });
+    }, []);
+    console.log(contact);
+
     return (
         <Layout>
             <Container top="pt-[160px] md:pt-[180px]">
@@ -30,7 +39,11 @@ function Contacts() {
                             <div className="flex flex-col w-full gap-5 mt-5 md:gap-3 lg:gap-5 md:w-full md:flex-row">
                                 <ButtonContact
                                     color="bg-red-500"
-                                    href="mailto:/surya.nata.aardhana@gmail.com"
+                                    href={
+                                        contact != null
+                                            ? `mailto:/${contact.email}`
+                                            : "#"
+                                    }
                                 >
                                     <span className="text-[20px]">
                                         <MdOutlineEmail />
@@ -39,7 +52,11 @@ function Contacts() {
                                 </ButtonContact>
                                 <ButtonContact
                                     color="bg-[#00B944]"
-                                    href="https://wa.me/+6289630133210"
+                                    href={
+                                        contact != null
+                                            ? `https://wa.me/+62${contact.telp}`
+                                            : "#"
+                                    }
                                 >
                                     <span className="text-[20px]">
                                         <FaWhatsapp />
@@ -55,7 +72,9 @@ function Contacts() {
                             <div className="flex flex-col w-full gap-5 my-5 md:gap-3 lg:gap-5 md:w-full md:flex-row">
                                 <ButtonContact
                                     color="bg-slate-700"
-                                    href="https://github.com/syrsdev"
+                                    href={
+                                        contact != null ? contact.github : "#"
+                                    }
                                 >
                                     <span className="text-[20px]">
                                         <FaGithub />
@@ -64,7 +83,11 @@ function Contacts() {
                                 </ButtonContact>
                                 <ButtonContact
                                     color="bg-pink-600"
-                                    href="https://instagram.com/nata_ardhana"
+                                    href={
+                                        contact != null
+                                            ? contact.instagram
+                                            : "#"
+                                    }
                                 >
                                     <span className="text-[20px]">
                                         <FaInstagram />
@@ -74,7 +97,7 @@ function Contacts() {
                             </div>
                             <ButtonContact
                                 color="bg-blue-600"
-                                href="https://www.linkedin.com/in/suryanataardhana/"
+                                href={contact != null ? contact.linkedin : "#"}
                             >
                                 <span className="text-[20px]">
                                     <FaLinkedin />
