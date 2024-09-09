@@ -14,12 +14,18 @@ function Navbar() {
 
     useEffect(() => {
         let scroll = () => {
-            if (window.scrollY > 15) {
+            if (window.innerWidth >= 768 && window.innerWidth <= 1024) {
                 setNavActive(true);
             } else {
-                setNavActive(false);
+                if (window.scrollY > 15) {
+                    setNavActive(true);
+                } else {
+                    setNavActive(false);
+                }
             }
         };
+        console.log(window.innerWidth);
+
         window.addEventListener("scroll", scroll);
         document.getElementById("scroll").onclick = () => {
             window.scrollTo(0, 0);
@@ -33,13 +39,27 @@ function Navbar() {
     return (
         <>
             <nav
-                className={`flex justify-between items-center text-white py-8 px-[25px] lg:px-[55px] xl:px-[80px] 2xl:px-[95px] font-bold absolute md:fixed w-full z-50 transition-all ${
+                className={`flex justify-center md:justify-between items-center text-white py-5 px-[25px] lg:px-[55px] xl:px-[80px] 2xl:px-[95px] font-bold absolute md:fixed w-full z-50 transition-all ${
                     navActive
                         ? "duration-1000 bg-gradient-to-r from-[#6C35DE] via-[#7D43E8] to-[#A364FF] shadow-xl shadow-slate-700 "
                         : "duration-500 bg-transparent"
                 } `}
             >
-                <p className="text-[16px]">SURYA'S PORTFOLIO</p>
+                <Link
+                    to={"/"}
+                    className="flex items-center gap-3 text-center xl:gap-4"
+                >
+                    <img
+                        src="./assets/nataniel.svg"
+                        alt=""
+                        className="w-[50px] md:w-[50px] xl:w-[55px]"
+                    />
+                    <div className="items-center justify-center hidden md:flex-col md:flex">
+                        <p className="text-[16px] h-[16px]">
+                            SURYA'S PORTFOLIO
+                        </p>
+                    </div>
+                </Link>
                 <ul
                     className="md:flex hidden md:gap-7 xl:gap-10 text-[14px] xl:text-[16px] items-center"
                     id="scroll"
@@ -121,7 +141,7 @@ function Navbar() {
                 <img
                     src="./assets/navbarWave.svg"
                     alt="wave"
-                    className="absolute w-full h-[123px] md:h-[115px] object-cover"
+                    className="absolute w-full h-[123px] md:h-[120px] object-cover"
                 />
             )}
 
