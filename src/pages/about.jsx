@@ -1,13 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "../layouts/layout";
 import Container from "../layouts/container";
 import Title from "../components/title/title";
 import { BiSolidUser } from "react-icons/bi";
 import { PiBuildingOfficeBold } from "react-icons/pi";
 import { SlLocationPin } from "react-icons/sl";
+import { getAbout } from "../services/about.service";
 
 function About() {
     const [tab, setTab] = useState(false);
+    const [about, setAbout] = useState({});
+
+    useEffect(() => {
+        getAbout((res) => {
+            setAbout(res);
+        });
+    }, []);
+    console.log(about);
+
     return (
         <Layout>
             <Container top="pt-[160px] md:pt-[180px]">
@@ -44,38 +54,24 @@ function About() {
                                         text="start"
                                     />
                                     <ol className="flex flex-col gap-12 pt-3 pb-6 border-l-2 border-primary">
-                                        <li className="px-5">
-                                            <div className="flex items-center gap-4 mb-3">
-                                                <span className="w-3 h-3 bg-white rounded-full -ms-[26.5px]"></span>
-                                                <div className="px-2 py-2 font-bold text-sm rounded-[8px] bg-tertiary">
-                                                    june 2021 - mei 2024
+                                        {about.education.map((item) => (
+                                            <li className="px-5">
+                                                <div className="flex items-center gap-4 mb-3">
+                                                    <span className="w-3 h-3 bg-white rounded-full -ms-[26.5px]"></span>
+                                                    <div className="px-2 py-2 font-bold text-sm rounded-[8px] bg-tertiary">
+                                                        june 2021 - mei 2024
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div className="flex flex-col gap-1">
-                                                <h3 className="font-bold text-[18px]">
-                                                    SMKN 4 TANGERANG
-                                                </h3>
-                                                <p className="text-[12px]">
-                                                    Software engineering
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li className="px-5">
-                                            <div className="flex items-center gap-4 mb-3">
-                                                <span className="w-3 h-3 bg-white rounded-full -ms-[26.5px]"></span>
-                                                <div className="px-2 py-2 font-bold text-sm rounded-[8px] bg-tertiary">
-                                                    june 2021 - mei 2024
+                                                <div className="flex flex-col gap-1">
+                                                    <h3 className="font-bold text-[18px]">
+                                                        {item.name}
+                                                    </h3>
+                                                    <p className="text-[12px]">
+                                                        Software engineering
+                                                    </p>
                                                 </div>
-                                            </div>
-                                            <div className="flex flex-col gap-1">
-                                                <h3 className="font-bold text-[18px]">
-                                                    SMKN 4 TANGERANG
-                                                </h3>
-                                                <p className="text-[12px]">
-                                                    Software engineering
-                                                </p>
-                                            </div>
-                                        </li>
+                                            </li>
+                                        ))}
                                     </ol>
                                 </div>
                                 <div className="flex flex-col w-full lg:w-fit">
