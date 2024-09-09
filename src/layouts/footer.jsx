@@ -13,7 +13,6 @@ function Footer() {
     }, []);
 
     const { data } = useContext(FooterData);
-    console.log(data);
 
     return (
         <footer className="mt-[60px] border-t-2 border-primary text-wrap">

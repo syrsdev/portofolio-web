@@ -14,7 +14,6 @@ function Contacts() {
             setContact(data);
         });
     }, []);
-    console.log(contact);
 
     return (
         <Layout>
