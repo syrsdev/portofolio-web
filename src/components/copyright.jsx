@@ -7,7 +7,7 @@ function Copyright() {
     const { data } = useContext(FooterData);
     return (
         <Container>
-            <div className="flex justify-between flex-col md:flex-row gap-5 items-center border-t-2 border-primary py-[30px]">
+            <div className="flex pb-28 md:pb-7 justify-between flex-col md:flex-row gap-5 items-center border-t-2 border-primary py-[30px]">
                 <div className="flex gap-5 w-max">
                     <a target="_blank" href={data == null ? "" : data.spotify}>
                         <FaSpotify className="w-[25px] h-[25px]" />
