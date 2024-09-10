@@ -50,7 +50,7 @@ function Navbar() {
                     className="flex items-center gap-3 text-center xl:gap-4"
                 >
                     <img
-                        src="./assets/nataniel.svg"
+                        src="./assets/nata.svg"
                         alt=""
                         className="w-[50px] md:w-[50px] xl:w-[55px]"
                     />
