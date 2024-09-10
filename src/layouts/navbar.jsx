@@ -24,7 +24,6 @@ function Navbar() {
                 }
             }
         };
-        console.log(window.innerWidth);
 
         window.addEventListener("scroll", scroll);
         document.getElementById("scroll").onclick = () => {
