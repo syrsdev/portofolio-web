@@ -20,7 +20,7 @@ function Footer() {
                 <div className="flex flex-col justify-between gap-12 lg:flex-row lg:gap-0">
                     <div className="flex flex-col w-full gap-3 md:w-max">
                         <h5 className="font-bold text-[24px] ">
-                            Surya's Portfolio
+                            Syrsdev Portfolio
                         </h5>
                         <p>
                             Thank you for visiting my personal portfolio

@@ -55,7 +55,7 @@ function Navbar() {
                     />
                     <div className="items-center justify-center hidden md:flex-col md:flex">
                         <p className="text-[16px] h-[16px]">
-                            SURYA'S PORTFOLIO
+                            SYRSDEV PORTFOLIO
                         </p>
                     </div>
                 </Link>
