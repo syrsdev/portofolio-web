@@ -44,7 +44,7 @@ function About() {
                         {tab == false ? (
                             <>
                                 <Title text="start" title="About Me" />
-                                <Title text="start" title="My Certificates" />
+n                                <Title text="start" title="My Certificates" />
                             </>
                         ) : (
                             <div className="flex flex-col justify-between gap-10 md:flex-col-reverse lg:flex-row">
