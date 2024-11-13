@@ -1,12 +1,8 @@
 import React from "react";
-import { FaLongArrowAltUp } from "react-icons/fa";
 import ScrollToTop from "react-scroll-to-top";
 
 const ButtonToTop = () => {
     return (
-        // <button className="fixed bottom-5 right-5 bg-gradient-to-r from-[#6C35DE] to-[#A364FF] w-[40px] h-[40px] rounded-full flex items-center justify-center animate-pulse">
-        //     <FaLongArrowAltUp />
-        // </button>
         <ScrollToTop
             smooth
             color="#fff"
