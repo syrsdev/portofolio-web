@@ -1,6 +1,7 @@
 import React from "react";
 import ButtonGroup from "../button/buttonGroup";
 import { Link } from "react-router-dom";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 function CardProject({ src, alt = "#", title, caption }) {
     return (
@@ -11,7 +12,7 @@ function CardProject({ src, alt = "#", title, caption }) {
                 className="rounded-t-[15px] h-[180px] lg:h-[200px] object-cover group-hover:blur-[1px]"
             />
             <div className="h-[180px] lg:h-[200px] font-bold absolute text-transparent group-hover:text-white flex items-center justify-center group-hover:bg-black z-30 w-full rounded-t-[15px] group-hover:bg-opacity-60 duration-500 transition-all">
-                Detail Project {"->"}
+                Detail Project <FaLongArrowAltRight className="ml-2" />
             </div>
             <div className="p-5 bg-secondary rounded-b-[15px] flex-col flex gap-1">
                 <h4 className="font-bold text-[16px] line-clamp-1">{title}</h4>
