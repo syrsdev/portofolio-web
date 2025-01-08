@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const getAllSkill = (callback) => {
     axios
-        .get("http://127.0.0.1:8000/api/home/skills")
+        .get(`${import.meta.env.VITE_API_ENDPOINT}/skills`)
         .then((res) => {
             callback(res.data.data);
         })

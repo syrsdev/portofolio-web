@@ -7,7 +7,7 @@ const FooterContextProvider = ({ children }) => {
     const [data, SetData] = useState(null);
 
     useEffect(() => {
-        axios.get("http://127.0.0.1:8000/api/footer").then((res) => {
+        axios.get(`${import.meta.env.VITE_API_ENDPOINT}/footer`).then((res) => {
             SetData(res.data.data);
         });
     }, []);

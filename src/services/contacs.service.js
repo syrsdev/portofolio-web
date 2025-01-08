@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const getContacts = (callback) => {
     axios
-        .get("http://127.0.0.1:8000/api/contacts")
+        .get(`${import.meta.env.VITE_API_ENDPOINT}/contacts`)
         .then((res) => {
             callback(res.data.data);
         })

@@ -1,8 +1,10 @@
 import axios from "axios";
 
+console.log(import.meta.env.API_ENDPOINT);
+
 export const getAbout = (callback) => {
     axios
-        .get("http://127.0.0.1:8000/api/about")
+        .get(`${import.meta.env.VITE_API_ENDPOINT}/about`)
         .then((res) => {
             callback(res.data.data);
         })
