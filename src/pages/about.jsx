@@ -67,7 +67,6 @@ function About() {
                                                             {
                                                                 month: "long",
                                                                 year: "numeric",
-                                                                day: "numeric",
                                                             }
                                                         )}{" "}
                                                         -{" "}
@@ -80,7 +79,6 @@ function About() {
                                                                   {
                                                                       month: "long",
                                                                       year: "numeric",
-                                                                      day: "numeric",
                                                                   }
                                                               )}
                                                     </div>
@@ -104,7 +102,10 @@ function About() {
                                         text="text-start md:text-center"
                                     />
                                     {about.experience.map((item) => (
-                                        <div className="flex flex-col md:flex-row justify-between gap-5 lg:gap-8 text-[12px] mb-7">
+                                        <div
+                                            key={item.id}
+                                            className="flex flex-col md:flex-row justify-between gap-5 lg:gap-8 text-[12px] mb-7"
+                                        >
                                             <div className="flex flex-col justify-between gap-3 w-fit">
                                                 <h3 className="font-bold text-[20px]">
                                                     {item.position}
@@ -135,7 +136,6 @@ function About() {
                                                 ).toLocaleDateString("en-US", {
                                                     month: "long",
                                                     year: "numeric",
-                                                    day: "numeric",
                                                 })} - ${
                                                     item.end_date == null
                                                         ? "Present"
@@ -146,7 +146,6 @@ function About() {
                                                               {
                                                                   month: "long",
                                                                   year: "numeric",
-                                                                  day: "numeric",
                                                               }
                                                           )
                                                 }`}</p>
