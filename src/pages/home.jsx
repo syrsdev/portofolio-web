@@ -9,6 +9,9 @@ import { TypeAnimation } from "react-type-animation";
 import cv from "../assets/CV-SURYA NATA ARDHANA.pdf";
 import { useEffect, useState } from "react";
 import { getAllSkill } from "../services/skills.service";
+import { getRecentProjects } from "../services/projects.service";
+import ProjectsCard from "../components/skeleton/ProjectsCardSkeleton";
+import ProjectsCardSkeleton from "../components/skeleton/ProjectsCardSkeleton";
 
 const Home = () => {
     let roll = [
@@ -26,12 +29,16 @@ const Home = () => {
         2000,
     ];
     const [skill, setSkill] = useState([]);
+    const [recentProject, setRecentProject] = useState([]);
     useEffect(() => {
         getAllSkill((res) => {
             setSkill(res);
         });
+
+        getRecentProjects((res) => {
+            setRecentProject(res);
+        });
     }, []);
-    console.log(skill);
     return (
         <>
             <Layout>
@@ -78,25 +85,37 @@ const Home = () => {
                     <section className="my-28">
                         <Title title={"Recently Projects 🚀"} />
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-9">
-                            <CardProject
-                                title={"Project 1"}
-                                caption={"Project 1 description"}
-                                src={"/assets/thumbnail.png"}
-                                alt={"#"}
-                            />
-                            <CardProject
-                                title={"Project 1"}
-                                caption={"Project 1 description"}
-                                src={"/assets/thumbnail.png"}
-                                alt={"#"}
-                            />
-                            <CardProject
-                                title={"Project 1"}
-                                caption={"Project 1 description"}
-                                src={"/assets/thumbnail.png"}
-                                alt={"#"}
-                            />
+                        <div
+                            className={`${
+                                recentProject == null
+                                    ? "flex justify-center items-center"
+                                    : "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-9"
+                            }`}
+                        >
+                            {recentProject == null ? (
+                                <div className="w-1/2 md:w-1/4">
+                                    <img
+                                        src="./assets/not-found.svg"
+                                        className="w-full"
+                                    />
+                                </div>
+                            ) : recentProject.length > 0 ? (
+                                recentProject.map((item) => (
+                                    <CardProject
+                                        key={item.id}
+                                        title={item.title}
+                                        caption={item.description}
+                                        src={item.image}
+                                        alt={item.title}
+                                    />
+                                ))
+                            ) : (
+                                <>
+                                    <ProjectsCardSkeleton classname="flex" />
+                                    <ProjectsCardSkeleton classname="hidden md:flex" />
+                                    <ProjectsCardSkeleton classname="hidden xl:flex" />
+                                </>
+                            )}
                         </div>
 
                         <div className="mx-auto mt-16 w-max">
@@ -122,8 +141,14 @@ const Home = () => {
                                 Technologies I’ve been working with recently
                             </Title>
 
-                            <div className="grid grid-cols-2 gap-10 md:grid-cols-3 justify-items-center xl:gap-24 xl:grid-cols-6">
-                                {skill.length != 0 &&
+                            <div
+                                className={`${
+                                    skill.length != 0
+                                        ? "grid grid-cols-2 gap-10 md:grid-cols-3 justify-items-center xl:gap-24 xl:grid-cols-6"
+                                        : "flex justify-center items-center"
+                                }`}
+                            >
+                                {skill.length != 0 ? (
                                     skill.map((item) => (
                                         <CardSkill
                                             key={item.id}
@@ -131,7 +156,15 @@ const Home = () => {
                                             src={item.image}
                                             alt={item.skill}
                                         />
-                                    ))}
+                                    ))
+                                ) : (
+                                    <div className="w-1/2 md:w-1/3">
+                                        <img
+                                            src="./assets/not-found.svg"
+                                            className="w-full"
+                                        />
+                                    </div>
+                                )}
                             </div>
                         </section>
                     </Container>
