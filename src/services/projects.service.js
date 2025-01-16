@@ -8,6 +8,7 @@ export const getProjects = (callback) => {
         })
         .catch((err) => {
             console.log(err);
+            callback({ status: 404, message: "Not Found" });
         });
 };
 
@@ -19,5 +20,6 @@ export const getRecentProjects = (callback) => {
         })
         .catch((err) => {
             console.log(err);
+            callback({ status: 404, message: "Not Found" });
         });
 };

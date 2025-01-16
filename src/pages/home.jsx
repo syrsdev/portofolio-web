@@ -39,6 +39,8 @@ const Home = () => {
             setRecentProject(res);
         });
     }, []);
+    console.log(recentProject);
+
     return (
         <>
             <Layout>
@@ -87,18 +89,17 @@ const Home = () => {
 
                         <div
                             className={`${
-                                recentProject == null
+                                recentProject.status == 404
                                     ? "flex justify-center items-center"
                                     : "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-9"
                             }`}
                         >
-                            {recentProject == null ? (
-                                <div className="w-1/2 md:w-1/4">
-                                    <img
-                                        src="./assets/not-found.svg"
-                                        className="w-full"
-                                    />
-                                </div>
+                            {recentProject.length == 0 ? (
+                                <>
+                                    <ProjectsCardSkeleton classname="flex" />
+                                    <ProjectsCardSkeleton classname="hidden md:flex" />
+                                    <ProjectsCardSkeleton classname="hidden xl:flex" />
+                                </>
                             ) : recentProject.length > 0 ? (
                                 recentProject.map((item) => (
                                     <CardProject
@@ -107,14 +108,16 @@ const Home = () => {
                                         caption={item.description}
                                         src={item.image}
                                         alt={item.title}
+                                        skills={item.skills}
                                     />
                                 ))
                             ) : (
-                                <>
-                                    <ProjectsCardSkeleton classname="flex" />
-                                    <ProjectsCardSkeleton classname="hidden md:flex" />
-                                    <ProjectsCardSkeleton classname="hidden xl:flex" />
-                                </>
+                                <div className="w-1/2 md:w-1/4">
+                                    <img
+                                        src="./assets/not-found.svg"
+                                        className="w-full"
+                                    />
+                                </div>
                             )}
                         </div>
 

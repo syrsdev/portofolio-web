@@ -13,6 +13,7 @@ function Portfolio() {
             setProject(res);
         });
     }, []);
+
     return (
         <Layout>
             <Container top="pt-[150px] lg:pt-[170px]">
@@ -23,18 +24,17 @@ function Portfolio() {
                 <section className="my-16">
                     <div
                         className={`${
-                            Project == null
+                            Project.status == 404
                                 ? "flex justify-center items-center"
                                 : "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-9"
                         }`}
                     >
-                        {Project == null ? (
-                            <div className="w-1/2 md:w-1/4">
-                                <img
-                                    src="./assets/not-found.svg"
-                                    className="w-full"
-                                />
-                            </div>
+                        {Project.length == 0 ? (
+                            <>
+                                <ProjectsCardSkeleton classname="flex" />
+                                <ProjectsCardSkeleton classname="hidden md:flex" />
+                                <ProjectsCardSkeleton classname="hidden xl:flex" />
+                            </>
                         ) : Project.length > 0 ? (
                             Project.map((item) => (
                                 <CardProject
@@ -43,14 +43,16 @@ function Portfolio() {
                                     caption={item.description}
                                     src={item.image}
                                     alt={item.title}
+                                    skills={item.skills}
                                 />
                             ))
                         ) : (
-                            <>
-                                <ProjectsCardSkeleton classname="flex" />
-                                <ProjectsCardSkeleton classname="hidden md:flex" />
-                                <ProjectsCardSkeleton classname="hidden xl:flex" />
-                            </>
+                            <div className="w-1/2 md:w-1/4">
+                                <img
+                                    src="./assets/not-found.svg"
+                                    className="w-full"
+                                />
+                            </div>
                         )}
                     </div>
                 </section>
