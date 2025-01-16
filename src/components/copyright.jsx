@@ -26,7 +26,8 @@ function Copyright() {
                     </a>
                 </div>
                 <div className="w-max font-semibold text-[10px] md:text-[12px]">
-                    ©2024 Surya Nata Ardhana | All rights reserved
+                    ©2024 - {new Date().getFullYear()} Surya Nata Ardhana | All
+                    rights reserved
                 </div>
             </div>
         </Container>
