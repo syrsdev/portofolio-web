@@ -64,6 +64,10 @@ Start the server
 
 please check and read the documentation: https://github.com/syrsdev/portofolio-api
 
+### Install and run the CMS (Content Management System)
+
+please check and read the documentation: https://github.com/syrsdev/portofolio-cms
+
 ## Authors
 
 - [@syrsdev](https://www.github.com/syrsdev)
