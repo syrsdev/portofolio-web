@@ -14,9 +14,9 @@ This repository was created to store the frontend code of the dynamic personal p
 
 **Frontend:** ReactJS, TailwindCSS, axios, react-router-dom
 
-**Backend CMS:** Laravel, Bootstrap
+**Backend CMS:** PHP, Laravel, Bootstrap
 
-**Backend API:** Laravel
+**Backend API:** PHP, Laravel
 
 **Database:** Mysql
 
