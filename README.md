@@ -6,6 +6,9 @@
 
 This repository was created to store the frontend code of the dynamic personal portfolio website
 
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
 
 ## Tech Stack
 
@@ -61,18 +64,14 @@ Start the server
 
 please check and read the documentation: https://github.com/syrsdev/portofolio-api
 
+## Authors
+
+- [@syrsdev](https://www.github.com/syrsdev)
 
 ## Feedback
 
 If you have any feedback, please reach out to us at https://linktr.ee/syrsdev
 
 
-## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
-
-
-## Authors
-
-- [@syrsdev](https://www.github.com/syrsdev)
 
