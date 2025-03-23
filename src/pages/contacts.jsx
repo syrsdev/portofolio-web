@@ -14,6 +14,7 @@ function Contacts() {
             setContact(data);
         });
     }, []);
+    console.log(contact);
 
     return (
         <Layout>
@@ -39,9 +40,8 @@ function Contacts() {
                                 <ButtonContact
                                     color="bg-red-500"
                                     href={
-                                        contact != null
-                                            ? `mailto:/${contact.email}`
-                                            : "#"
+                                        contact?.email != null &&
+                                        `mailto:/${contact.email}`
                                     }
                                 >
                                     <span className="text-[20px]">
@@ -52,9 +52,8 @@ function Contacts() {
                                 <ButtonContact
                                     color="bg-[#00B944]"
                                     href={
-                                        contact != null
-                                            ? `https://wa.me/+62${contact.telp}`
-                                            : "#"
+                                        contact?.telp != null &&
+                                        `https://wa.me/+62${contact.telp}`
                                     }
                                 >
                                     <span className="text-[20px]">
@@ -72,7 +71,8 @@ function Contacts() {
                                 <ButtonContact
                                     color="bg-slate-700"
                                     href={
-                                        contact != null ? contact.github : "#"
+                                        contact?.github != null &&
+                                        contact.github
                                     }
                                 >
                                     <span className="text-[20px]">
@@ -83,9 +83,8 @@ function Contacts() {
                                 <ButtonContact
                                     color="bg-pink-600"
                                     href={
-                                        contact != null
-                                            ? contact.instagram
-                                            : "#"
+                                        contact?.instagram != null &&
+                                        contact.instagram
                                     }
                                 >
                                     <span className="text-[20px]">
@@ -96,7 +95,10 @@ function Contacts() {
                             </div>
                             <ButtonContact
                                 color="bg-blue-600"
-                                href={contact != null ? contact.linkedin : "#"}
+                                href={
+                                    contact?.linkedin != null &&
+                                    contact.linkedin
+                                }
                             >
                                 <span className="text-[20px]">
                                     <FaLinkedin />
