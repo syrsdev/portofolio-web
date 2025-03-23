@@ -61,11 +61,11 @@ function About() {
                                         "data not found"
                                     )}
                                 </div>
-                                <Title
+                                {/* <Title
                                     mb="mb-3"
                                     text="start"
                                     title="My Certificates"
-                                />
+                                /> */}
                             </>
                         ) : (
                             <div className="flex flex-col justify-between gap-10 md:flex-col-reverse lg:flex-row">
