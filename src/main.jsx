@@ -9,6 +9,7 @@ import About from "./pages/about";
 import Contacts from "./pages/contacts";
 import Portfolio from "./pages/portfolio";
 import FooterContextProvider from "./context/footerContext";
+import ProjectDetail from "./pages/projectDetail";
 
 const router = createBrowserRouter([
     {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
     {
         path: "/portfolio",
         element: <Portfolio />,
+    },
+    {
+        path: "/portfolio/:slug",
+        element: <ProjectDetail />,
     },
     {
         path: "/contacts",
