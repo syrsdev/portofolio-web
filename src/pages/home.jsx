@@ -12,20 +12,19 @@ import { getAllSkill } from "../services/skills.service";
 import { getRecentProjects } from "../services/projects.service";
 import ProjectsCard from "../components/skeleton/ProjectsCardSkeleton";
 import ProjectsCardSkeleton from "../components/skeleton/ProjectsCardSkeleton";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Home = () => {
     let roll = [
         "Frontend Developer",
         2000,
-        "Web Developer",
-        2000,
         "Freelancer",
         2000,
         "Programmer",
         2000,
-        "ReactJS Developer",
+        "Fullstack Developer",
         2000,
-        "Laravel Fullstack Developer",
+        "Mobile App Developer",
         2000,
     ];
     const [skill, setSkill] = useState([]);
@@ -108,6 +107,7 @@ const Home = () => {
                                         caption={item.description}
                                         src={item.image}
                                         alt={item.title}
+                                        detail={item.slug}
                                         skills={item.skills}
                                     />
                                 ))
@@ -197,7 +197,10 @@ const Home = () => {
                                 sm="true"
                                 text1={"Contact me !"}
                                 href1={"/contacts"}
-                                text2={"My services ->"}
+                                text2={"My services"}
+                                icon2={
+                                    <FaLongArrowAltRight className="ml-2 text-xl md:text-2xl" />
+                                }
                             />
                         </div>
                         <div className="flex justify-center w-auto md:justify-end">
