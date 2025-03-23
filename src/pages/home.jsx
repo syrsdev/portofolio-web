@@ -195,11 +195,15 @@ const Home = () => {
                             <ButtonGroup
                                 width="w-full md:w-fit"
                                 sm="true"
-                                text1={"Contact me !"}
-                                href1={"/contacts"}
-                                text2={"My services"}
+                                text1="Contact me !"
+                                href1="/contacts"
+                                href2="/under-construction"
+                                text2="My services"
                                 icon2={
-                                    <FaLongArrowAltRight className="ml-2 text-xl md:text-2xl" />
+                                    <FaLongArrowAltRight
+                                        classN
+                                        ame="ml-2 text-xl md:text-2xl"
+                                    />
                                 }
                             />
                         </div>

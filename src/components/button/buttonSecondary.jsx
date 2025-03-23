@@ -12,6 +12,7 @@ function ButtonSecondary({
         <>
             {href != null ? (
                 <Link
+                    to={href}
                     onClick={() => window.scrollTo(0, 0)}
                     className={`flex justify-center items-center relative bg-secondary hover:text-white isolation-auto z-10 px-12 font-bold text-primary rounded-[10px] transition-all duration-300 active:scale-90 active:shadow-[7px_5px_50px_-10px_#A364FF] w-full text-nowrap border-primary border-2 ${
                         sm

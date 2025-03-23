@@ -3,8 +3,8 @@ import Button from "./button";
 import ButtonSecondary from "./buttonSecondary";
 
 function ButtonGroup({
-    href1 = null,
-    href2 = null,
+    href1 = "",
+    href2 = "",
     icon1 = null,
     icon2 = null,
     sm = false,
