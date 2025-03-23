@@ -13,7 +13,7 @@ function CardProject({ src, detail, alt = "#", title, caption, skills = [] }) {
                 <img
                     src={src}
                     alt={alt}
-                    className="rounded-t-[15px] h-[180px] lg:h-[200px] object-cover group-hover:blur-[1px] relative -z-50"
+                    className="rounded-t-[15px] w-full h-[180px] lg:h-[200px] object-cover group-hover:blur-[1px] relative -z-50"
                 />
                 <p className="absolute flex items-center justify-center gap-1">
                     Detail Project <FaLongArrowAltRight className="ml-2" />
