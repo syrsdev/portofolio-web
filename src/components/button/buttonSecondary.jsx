@@ -13,7 +13,7 @@ function ButtonSecondary({
             {href != null ? (
                 <Link
                     onClick={() => window.scrollTo(0, 0)}
-                    className={`relative bg-secondary hover:text-white isolation-auto z-10 px-12 font-bold text-primary rounded-[10px] transition-all duration-300 active:scale-90 active:shadow-[7px_5px_50px_-10px_#A364FF] w-full text-nowrap border-primary border-2 ${
+                    className={`flex justify-center items-center relative bg-secondary hover:text-white isolation-auto z-10 px-12 font-bold text-primary rounded-[10px] transition-all duration-300 active:scale-90 active:shadow-[7px_5px_50px_-10px_#A364FF] w-full text-nowrap border-primary border-2 ${
                         sm
                             ? `text-[12px] lg:text-[14px] py-2`
                             : "text-[12px] lg:text-[16px] py-3"
@@ -23,7 +23,7 @@ function ButtonSecondary({
                 </Link>
             ) : (
                 <button
-                    className={`relative bg-secondary hover:text-white isolation-auto z-10 px-12 font-bold text-primary rounded-[10px] transition-all duration-300 active:scale-90 active:shadow-[7px_5px_50px_-10px_#A364FF] w-full text-nowrap border-primary border-2 ${
+                    className={`flex justify-center items-center relative bg-secondary hover:text-white isolation-auto z-10 px-12 font-bold text-primary rounded-[10px] transition-all duration-300 active:scale-90 active:shadow-[7px_5px_50px_-10px_#A364FF] w-full text-nowrap border-primary border-2 ${
                         sm
                             ? `text-[12px] lg:text-[14px] py-2`
                             : "text-[12px] lg:text-[16px] py-3"
