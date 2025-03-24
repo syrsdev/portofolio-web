@@ -49,7 +49,7 @@ function Navbar() {
                     className="flex items-center gap-3 text-center xl:gap-4"
                 >
                     <img
-                        src="./assets/nata.svg"
+                        src="/assets/nata.svg"
                         alt=""
                         className="w-[50px] md:w-[50px] xl:w-[55px]"
                     />
@@ -92,7 +92,8 @@ function Navbar() {
                     <li>
                         <Link
                             className={`relative ${
-                                link == "/portfolio"
+                                link == "/portfolio" ||
+                                link == `/portfolio/${link.split("/")[2]}`
                                     ? "before:w-full before:absolute before:h-1 before:-bottom-2 before:rounded-full before:bg-white"
                                     : "before:w-full before:absolute before:bg-transparent before:h-1 before:hover:-bottom-2 before:bottom-0 before:rounded-full before:hover:bg-white before:duration-500 before:transition-all"
                             }`}
@@ -138,7 +139,7 @@ function Navbar() {
             </nav>
             {!navActive && (
                 <img
-                    src="./assets/navbarWave.svg"
+                    src="/assets/navbarWave.svg"
                     alt="wave"
                     className="absolute w-full h-[123px] md:h-[120px] object-cover"
                 />
@@ -180,7 +181,8 @@ function Navbar() {
                     <Link
                         to={"/portfolio"}
                         className={`relative flex flex-col items-center gap-1 ${
-                            link == "/portfolio"
+                            link == "/portfolio" ||
+                            link == `/portfolio/${link.split("/")[2]}`
                                 ? "text-primary"
                                 : "text-white hover:text-primary duration-500 transition-all"
                         }`}
