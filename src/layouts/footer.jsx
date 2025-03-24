@@ -18,7 +18,10 @@ function Footer() {
         <footer className="mt-[60px] border-t-2 border-primary text-wrap">
             <Container top="pt-[50px]">
                 <div className="flex flex-col justify-between gap-12 lg:flex-row lg:gap-0">
-                    <div className="flex flex-col w-full gap-3 md:w-max">
+                    <div
+                        data-aos="fade-right"
+                        className="flex flex-col w-full gap-3 md:w-max"
+                    >
                         <h5 className="font-bold text-[24px] ">
                             Syrsdev Portfolio
                         </h5>
@@ -27,7 +30,10 @@ function Footer() {
                             website, Connect with me over socials.
                         </p>
                     </div>
-                    <div className="flex lg:justify-end w-full gap-12 md:gap-[100px] lg:gap-[50px] xl:gap-[100px] flex-col md:flex-row text-wrap">
+                    <div
+                        data-aos="fade-left"
+                        className="flex lg:justify-end w-full gap-12 md:gap-[100px] lg:gap-[50px] xl:gap-[100px] flex-col md:flex-row text-wrap"
+                    >
                         <div className="flex flex-col gap-[15px]">
                             <h6 className="font-bold text-[20px] ">
                                 Contact Info

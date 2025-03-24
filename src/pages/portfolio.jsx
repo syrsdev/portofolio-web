@@ -17,11 +17,11 @@ function Portfolio() {
     return (
         <Layout>
             <Container top="pt-[150px] lg:pt-[170px]">
-                <Title title={"Portfolio 🚀"}>
+                <Title aos="zoom-in" title={"Portfolio 🚀"}>
                     all projects that I have worked on
                 </Title>
 
-                <section className="my-16">
+                <section className="my-16" data-aos="fade-up">
                     <div
                         className={`${
                             Project.status == 404

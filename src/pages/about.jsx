@@ -21,7 +21,10 @@ function About() {
     return (
         <Layout>
             <Container top="pt-[160px] md:pt-[180px]">
-                <div className="flex flex-col w-full">
+                <div
+                    className="flex flex-col w-full mb-[230px]"
+                    data-aos="zoom-in"
+                >
                     <div className="flex w-full text-center">
                         <button
                             className={`md:px-7 px-5 py-4 rounded-tl-[28px] ${

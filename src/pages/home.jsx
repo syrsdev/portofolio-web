@@ -10,7 +10,6 @@ import cv from "../assets/CV-SURYA NATA ARDHANA.pdf";
 import { useEffect, useState } from "react";
 import { getAllSkill } from "../services/skills.service";
 import { getRecentProjects } from "../services/projects.service";
-import ProjectsCard from "../components/skeleton/ProjectsCardSkeleton";
 import ProjectsCardSkeleton from "../components/skeleton/ProjectsCardSkeleton";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
@@ -38,14 +37,15 @@ const Home = () => {
             setRecentProject(res);
         });
     }, []);
-    console.log(recentProject);
-
     return (
         <>
             <Layout>
                 <Container top="pt-[160px] md:pt-[180px]">
                     <header className="flex flex-col md:items-center md:flex-row">
-                        <div className="flex flex-col justify-center w-full gap-2 md:gap-1 md:w-1/2">
+                        <div
+                            data-aos="fade-right"
+                            className="flex flex-col justify-center w-full gap-2 md:gap-1 md:w-1/2"
+                        >
                             <h1 className="flex flex-col gap-2 md:gap-1 font-bold text-[24px] xl:text-[34px]">
                                 <span className="text-[18px] xl:text-[24px]">
                                     Hello 👋, i am
@@ -74,7 +74,10 @@ const Home = () => {
                                 </Button>
                             </div>
                         </div>
-                        <div className="flex items-center justify-center w-full md:justify-end md:w-fit lg:w-1/2">
+                        <div
+                            data-aos="fade-left"
+                            className="flex items-center justify-center w-full md:justify-end md:w-fit lg:w-1/2"
+                        >
                             <img
                                 src="./assets/foto.svg"
                                 alt="surya nata ardhana"
@@ -84,9 +87,10 @@ const Home = () => {
                     </header>
 
                     <section className="my-28">
-                        <Title title={"Recently Projects 🚀"} />
+                        <Title aos="fade-up" title={"Recently Projects 🚀"} />
 
                         <div
+                            data-aos="fade-up"
                             className={`${
                                 recentProject.status == 404
                                     ? "flex justify-center items-center"
@@ -121,7 +125,7 @@ const Home = () => {
                             )}
                         </div>
 
-                        <div className="mx-auto mt-16 w-max">
+                        <div className="mx-auto mt-16 w-max" data-aos="fade-up">
                             <Button href={"/portfolio"}>More Projects</Button>
                         </div>
                     </section>
@@ -140,7 +144,7 @@ const Home = () => {
                         bg="bg-gradient-to-r from-[#6C35DE] via-[#7D43E8] to-[#A364FF]"
                     >
                         <section>
-                            <Title title={"My Skills 🎯"}>
+                            <Title title={"My Skills 🎯"} aos="zoom-in">
                                 Technologies I’ve been working with recently
                             </Title>
 
@@ -161,7 +165,10 @@ const Home = () => {
                                         />
                                     ))
                                 ) : (
-                                    <div className="w-1/2 md:w-1/3">
+                                    <div
+                                        data-aos="zoom-in"
+                                        className="w-1/2 md:w-1/3"
+                                    >
                                         <img
                                             src="./assets/not-found.svg"
                                             className="w-full"
@@ -181,7 +188,10 @@ const Home = () => {
                 </div>
 
                 <Container top="pt-[100px]">
-                    <div className="flex flex-col md:flex-row bg-secondary rounded-[30px] px-[20px] md:px-[50px] xl:px-[75px] py-[25px] gap-14 md:gap-[100px] justify-between">
+                    <div
+                        data-aos="zoom-in"
+                        className="flex flex-col md:flex-row bg-secondary rounded-[30px] px-[20px] md:px-[50px] xl:px-[75px] py-[25px] gap-14 md:gap-[100px] justify-between"
+                    >
                         <div className="flex flex-col justify-center w-full md:w-3/5 gap-3 md:gap-[15px]">
                             <h3 className="font-bold text-[24px] xl:text-[30px]">
                                 I’m available for every opportunity!
@@ -200,10 +210,7 @@ const Home = () => {
                                 href2="/under-construction"
                                 text2="My services"
                                 icon2={
-                                    <FaLongArrowAltRight
-                                        classN
-                                        ame="ml-2 text-xl md:text-2xl"
-                                    />
+                                    <FaLongArrowAltRight className="ml-2 text-xl md:text-2xl" />
                                 }
                             />
                         </div>
