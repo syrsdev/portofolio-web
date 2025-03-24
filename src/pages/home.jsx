@@ -107,11 +107,7 @@ const Home = () => {
                                 recentProject.map((item) => (
                                     <CardProject
                                         key={item.id}
-                                        title={item.title}
-                                        caption={item.description}
-                                        src={item.image}
-                                        alt={item.title}
-                                        detail={item.slug}
+                                        data={item}
                                         skills={item.skills}
                                     />
                                 ))

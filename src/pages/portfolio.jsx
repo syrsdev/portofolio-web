@@ -39,10 +39,7 @@ function Portfolio() {
                             Project.map((item) => (
                                 <CardProject
                                     key={item.id}
-                                    title={item.title}
-                                    caption={item.description}
-                                    src={item.image}
-                                    alt={item.title}
+                                    data={item}
                                     skills={item.skills}
                                 />
                             ))

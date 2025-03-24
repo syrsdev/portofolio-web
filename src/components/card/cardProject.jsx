@@ -1,18 +1,18 @@
 import React from "react";
-import ButtonGroup from "../button/buttonGroup";
 import { Link } from "react-router-dom";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import ButtonProject from "../button/buttonProject";
 
-function CardProject({ src, detail, alt = "#", title, caption, skills = [] }) {
+function CardProject({ data, skills = [] }) {
     return (
         <Link
-            to={`/portfolio/${detail}`}
+            to={`/portfolio/${data.slug}`}
             className="relative flex flex-col w-full cursor-pointer group "
         >
             <div className="h-full font-bold relative text-transparent group-hover:text-white flex items-center justify-center group-hover:bg-black  w-full rounded-t-[15px] group-hover:bg-opacity-60 duration-500 transition-all">
                 <img
-                    src={src}
-                    alt={alt}
+                    src={data.image}
+                    alt={data.title}
                     className="rounded-t-[15px] w-full h-[180px] lg:h-[200px] object-cover group-hover:blur-[1px] relative -z-50"
                 />
                 <p className="absolute flex items-center justify-center gap-1">
@@ -20,9 +20,11 @@ function CardProject({ src, detail, alt = "#", title, caption, skills = [] }) {
                 </p>
             </div>
             <div className="p-5 bg-secondary rounded-b-[15px] flex-col flex gap-1 h-full justify-between">
-                <h4 className="font-bold text-[16px] line-clamp-1">{title}</h4>
+                <h4 className="font-bold text-[16px] line-clamp-1">
+                    {data.title}
+                </h4>
                 <p
-                    dangerouslySetInnerHTML={{ __html: caption }}
+                    dangerouslySetInnerHTML={{ __html: data.description }}
                     className="text-[14px] w-full text-wrap line-clamp-2 project-desc"
                 ></p>
                 {skills.length > 0 && (
@@ -37,11 +39,11 @@ function CardProject({ src, detail, alt = "#", title, caption, skills = [] }) {
                         ))}
                     </div>
                 )}
-                <ButtonGroup
-                    sm="true"
-                    text1={"View"}
-                    text2={"Github"}
-                    width="full"
+                <ButtonProject
+                    demo={data.link}
+                    github={data.github_link}
+                    figma={data.figma_link}
+                    slug={data.slug}
                 />
             </div>
         </Link>
