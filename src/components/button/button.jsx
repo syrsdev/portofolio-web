@@ -17,7 +17,7 @@ function Button({
                         download={download}
                         onClick={() => window.scrollTo(0, 0)}
                         href={href}
-                        className={`flex justify-center items-center px-12 text-center font-bold text-white ${color} rounded-[10px] hover:shadow-[7px_5px_56px_-14px_#A364FF] transition-all duration-300 active:scale-90 active:shadow-[7px_5px_56px_-10px_#A364FF] w-full text-nowrap gap-1 ${
+                        className={`flex justify-center items-center px-12 text-center font-bold text-white ${color} rounded-[10px] hover:shadow-[7px_5px_56px_-14px_#A364FF] transition-all duration-300 active:scale-90 active:shadow-[7px_5px_56px_-10px_#A364FF] w-full text-nowrap ${
                             sm
                                 ? `text-[12px] lg:text-[14px] py-2`
                                 : "text-[12px] lg:text-[16px] py-3"
@@ -29,7 +29,7 @@ function Button({
                     <Link
                         onClick={() => window.scrollTo(0, 0)}
                         to={href}
-                        className={`flex justify-center items-center px-12 text-center font-bold text-white ${color} rounded-[10px] hover:shadow-[7px_5px_56px_-14px_#A364FF] transition-all duration-300 active:scale-90 active:shadow-[7px_5px_56px_-10px_#A364FF] w-full text-nowrap gap-1 ${
+                        className={`flex justify-center items-center px-12 text-center font-bold text-white ${color} rounded-[10px] hover:shadow-[7px_5px_56px_-14px_#A364FF] transition-all duration-300 active:scale-90 active:shadow-[7px_5px_56px_-10px_#A364FF] w-full text-nowrap ${
                             sm
                                 ? `text-[12px] lg:text-[14px] py-2`
                                 : "text-[12px] lg:text-[16px] py-3"
