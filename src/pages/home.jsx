@@ -70,7 +70,7 @@ const Home = () => {
                                     href={cv}
                                     download={"cv-surya nata ardhana.pdf"}
                                 >
-                                    Download CV
+                                    Download Resume
                                 </Button>
                             </div>
                         </div>
