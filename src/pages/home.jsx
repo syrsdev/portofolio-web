@@ -15,15 +15,13 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Home = () => {
   let roll = [
-    "Frontend Developer",
+    "Software Engineer",
     2000,
     "Freelancer",
     2000,
-    "Programmer",
-    2000,
     "Fullstack Developer",
     2000,
-    "Mobile App Developer",
+    "UI/UX Designer",
     2000,
   ];
   const [skill, setSkill] = useState([]);
@@ -179,9 +177,9 @@ const Home = () => {
                   I’m available for every opportunity!
                 </h3>
                 <p className="text-[14px] xl:text-[16px]">
-                  I specialize in Front End Development and Laravel Web
-                  Development. Interested working with me? Need help on your
-                  project? I’d love to hear you about that.
+                  I specialize in Software Development (Fullstack). Interested
+                  working with me? Need help on your project? I’d love to hear
+                  you about that.
                 </p>
                 <ButtonGroup
                   width="w-full md:w-fit"
