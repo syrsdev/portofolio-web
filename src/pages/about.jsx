@@ -127,7 +127,7 @@ function About() {
                             {item.position}
                           </h3>
                           <div className="flex items-center gap-3 ">
-                            <div className="flex items-center gap-1">
+                            <div className="flex items-center gap-2">
                               <p className="text-[16px]">
                                 <PiBuildingOfficeBold />
                               </p>
@@ -143,7 +143,7 @@ function About() {
                             </div>
                           </div>
                         </div>
-                        <div className="flex flex-row flex-wrap items-center justify-between gap-3 md:items-end md:flex-col w-max">
+                        <div className="flex flex-col-reverse flex-wrap items-start justify-between gap-3 md:items-end md:flex-col w-max">
                           <span className="px-5 py-1 rounded-full w-fit bg-tertiary">
                             {item.status.title}
                           </span>
