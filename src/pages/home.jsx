@@ -188,9 +188,6 @@ const Home = () => {
                   href1="/contacts"
                   href2="/under-construction"
                   text2="My services"
-                  icon2={
-                    <FaLongArrowAltRight className="ml-2 text-xl md:text-2xl" />
-                  }
                 />
               </div>
               <div className="flex justify-center w-auto md:justify-end">
