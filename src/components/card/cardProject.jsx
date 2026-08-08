@@ -5,9 +5,10 @@ import ButtonProject from "../button/buttonProject";
 
 function CardProject({ data, skills = [] }) {
   return (
-    <div className="relative flex flex-col w-full group ">
+    <div className="relative flex flex-col w-full group" data-aos="flip-up">
       <Link
-        to={`/portfolio/${data.slug}`}
+        to={`/under-construction`}
+        // to={`/portfolio/${data.slug}`}
         className="h-full cursor-pointer font-bold relative text-transparent group-hover:text-white flex items-center justify-center group-hover:bg-black  w-full rounded-t-[15px] group-hover:bg-opacity-60 duration-500 transition-all"
       >
         <img
@@ -26,13 +27,13 @@ function CardProject({ data, skills = [] }) {
           className="text-[14px] w-full text-wrap line-clamp-2 project-desc"
         ></p>
         {skills.length > 0 && (
-          <div className="flex mt-3">
+          <div className="flex gap-3 mt-3">
             {skills.map((skill) => (
               <img
-                key={skill.skill_id}
-                src="./assets/html.png"
-                alt=""
-                className="max-w-[20px] object-contain"
+                key={skill.id}
+                src={skill.image}
+                alt={skill.skill}
+                className="max-w-[26px] object-contain"
               />
             ))}
           </div>

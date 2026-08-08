@@ -6,7 +6,7 @@ import Title from "../components/title/title";
 import Container from "../layouts/container";
 import Layout from "../layouts/layout";
 import { TypeAnimation } from "react-type-animation";
-import cv from "../assets/CV-SURYA NATA ARDHANA.pdf";
+import cv from "../assets/CV Surya Nata Ardhana.pdf";
 import { useEffect, useState } from "react";
 import { getAllSkill } from "../services/skills.service";
 import { getRecentProjects } from "../services/projects.service";
@@ -99,9 +99,15 @@ const Home = () => {
                   <ProjectsCardSkeleton classname="hidden xl:flex" />
                 </>
               ) : recentProject.length > 0 ? (
-                recentProject.map((item) => (
-                  <CardProject key={item.id} data={item} skills={item.skills} />
-                ))
+                recentProject
+                  .slice(0, 3)
+                  .map((item) => (
+                    <CardProject
+                      key={item.id}
+                      data={item}
+                      skills={item.skills}
+                    />
+                  ))
               ) : (
                 <div className="w-1/2 md:w-1/4">
                   <img src="./assets/not-found.svg" className="w-full" />
@@ -109,7 +115,7 @@ const Home = () => {
               )}
             </div>
 
-            <div className="mx-auto mt-16 w-max" data-aos="fade-up">
+            <div className="w-full mx-auto mt-16 lg:w-max" data-aos="fade-up">
               <Button href={"/portfolio"}>More Projects</Button>
             </div>
           </section>
@@ -135,7 +141,7 @@ const Home = () => {
               <div
                 className={`${
                   skill.length != 0
-                    ? "grid grid-cols-2 gap-10 md:grid-cols-3 justify-items-center xl:gap-24 xl:grid-cols-6"
+                    ? "grid grid-cols-2 gap-6 md:grid-cols-3 justify-items-center xl:gap-14 xl:grid-cols-6"
                     : "flex justify-center items-center"
                 }`}
               >
