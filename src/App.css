@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.project-desc * img{
-    display: none;
+.project-desc * img {
+  display: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
 }
