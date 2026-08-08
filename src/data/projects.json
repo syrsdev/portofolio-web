@@ -1,0 +1,428 @@
+[
+  {
+    "id": 1,
+    "title": "EV Charging Station Monitoring System",
+    "description": "Sistem monitoring pengisian daya kendaraan listrik berbasis website.",
+    "image": "/assets/data/ev.png",
+    "slug": "ev-charging-station-monitoring-system",
+    "skills": [
+      {
+        "id": 1,
+        "skill": "Next JS",
+        "image": "https://skillicons.dev/icons?i=next"
+      },
+      {
+        "id": 2,
+        "skill": "Tailwind CSS",
+        "image": "https://skillicons.dev/icons?i=tailwind"
+      },
+      {
+        "id": 3,
+        "skill": "Laravel",
+        "image": "https://skillicons.dev/icons?i=laravel"
+      },
+      {
+        "id": 4,
+        "skill": "PostgreSQL",
+        "image": "https://skillicons.dev/icons?i=postgresql"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Treco Website",
+    "description": "Sistem Traceability berbasis website untuk memantau produk mawar dari petani hingga ke tangan konsumen.",
+    "image": "/assets/data/treco.png",
+    "slug": "treco-website",
+    "skills": [
+      {
+        "id": 1,
+        "skill": "React JS",
+        "image": "https://skillicons.dev/icons?i=react"
+      },
+      {
+        "id": 2,
+        "skill": "Tailwind CSS",
+        "image": "https://skillicons.dev/icons?i=tailwind"
+      },
+      {
+        "id": 3,
+        "skill": "Laravel",
+        "image": "https://skillicons.dev/icons?i=laravel"
+      },
+      {
+        "id": 4,
+        "skill": "MySQL",
+        "image": "https://skillicons.dev/icons?i=mysql"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "MyEdunt",
+    "description": "Aplikasi Monitoring dan Edukasi Stunting berbasis AI untuk memantau pertumbuhan anak dan memberikan edukasi kepada orang tua.",
+    "image": "/assets/data/myedunt.png",
+    "slug": "myedunt",
+    "skills": [
+      {
+        "id": 1,
+        "skill": "Figma",
+        "image": "https://skillicons.dev/icons?i=figma"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "SINICRITA",
+    "description": "Platform wadah bercerita secara anonim untuk mengurangi tingkat stres mahasiswa dengan fitur real-time chat dan call menggunakan Laravel Reverb.",
+    "image": "/assets/data/sinicrita.png",
+    "slug": "sinicrita",
+    "skills": [
+      {
+        "id": 1,
+        "skill": "React JS",
+        "image": "https://skillicons.dev/icons?i=react"
+      },
+      {
+        "id": 2,
+        "skill": "Tailwind CSS",
+        "image": "https://skillicons.dev/icons?i=tailwind"
+      },
+      {
+        "id": 3,
+        "skill": "Laravel",
+        "image": "https://skillicons.dev/icons?i=laravel"
+      },
+      {
+        "id": 4,
+        "skill": "MySQL",
+        "image": "https://skillicons.dev/icons?i=mysql"
+      },
+      {
+        "id": 5,
+        "skill": "Figma",
+        "image": "https://skillicons.dev/icons?i=figma"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "MKBKM FIP UNJ",
+    "description": "Website MBKM FIP UNJ yang memungkinkan mahasiswa untuk mengakses informasi terkait program MBKM, termasuk pendaftaran, jadwal, dan pengumuman.",
+    "image": "/assets/data/mbkm.png",
+    "slug": "mbkm-fip-unj",
+    "skills": [
+      {
+        "id": 1,
+        "skill": "Laravel",
+        "image": "https://skillicons.dev/icons?i=laravel"
+      },
+      {
+        "id": 2,
+        "skill": "Bootstrap",
+        "image": "https://skillicons.dev/icons?i=bootstrap"
+      },
+      {
+        "id": 3,
+        "skill": "MySQL",
+        "image": "https://skillicons.dev/icons?i=mysql"
+      },
+      {
+        "id": 4,
+        "skill": "Figma",
+        "image": "https://skillicons.dev/icons?i=figma"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Gili Voyages Website",
+    "description": "Website perjalanan yang memungkinkan pengguna untuk mencari dan memesan mobil, tiket kapal, dan paket perjalanan di Lombok.",
+    "image": "/assets/data/gili.png",
+    "slug": "gili-voyages-website",
+    "skills": [
+      {
+        "id": 1,
+        "skill": "Figma",
+        "image": "https://skillicons.dev/icons?i=figma"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "RMJ Trans Website",
+    "description": "Website perusahaan transportasi yang memungkinkan pengguna untuk mencari dan memesan layanan transportasi di Lombok.",
+    "image": "/assets/data/rmj.png",
+    "slug": "rmj-trans-website",
+    "skills": [
+      {
+        "id": 1,
+        "skill": "WordPress",
+        "image": "https://skillicons.dev/icons?i=wordpress"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Pokedex App",
+    "description": "Aplikasi database pokemon yang memungkinkan pengguna untuk mencari dan melihat informasi tentang pokemon.",
+    "image": "/assets/data/pokedex.png",
+    "slug": "pokedex-app",
+    "skills": [
+      {
+        "id": 1,
+        "skill": "Dart",
+        "image": "https://skillicons.dev/icons?i=dart"
+      },
+      {
+        "id": 2,
+        "skill": "Flutter",
+        "image": "https://skillicons.dev/icons?i=flutter"
+      },
+      {
+        "id": 3,
+        "skill": "Figma",
+        "image": "https://skillicons.dev/icons?i=figma"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Portfolio Website",
+    "description": "Website portofolio pribadi yang menampilkan informasi tentang saya, pengalaman kerja, dan proyek-proyek yang telah saya kerjakan.",
+    "image": "/assets/data/porto.png",
+    "slug": "portfolio-website",
+    "skills": [
+      {
+        "id": 1,
+        "skill": "React JS",
+        "image": "https://skillicons.dev/icons?i=react"
+      },
+      {
+        "id": 2,
+        "skill": "Tailwind CSS",
+        "image": "https://skillicons.dev/icons?i=tailwind"
+      },
+      {
+        "id": 3,
+        "skill": "Laravel",
+        "image": "https://skillicons.dev/icons?i=laravel"
+      },
+      {
+        "id": 4,
+        "skill": "MySQL",
+        "image": "https://skillicons.dev/icons?i=mysql"
+      },
+      {
+        "id": 5,
+        "skill": "Figma",
+        "image": "https://skillicons.dev/icons?i=figma"
+      }
+    ]
+  },
+
+  {
+    "id": 10,
+    "title": "SMKN 4 Kota Tangerang",
+    "description": "Website sekolah resmi SMKN 4 Kota Tangerang yang menampilkan informasi tentang sekolah, program studi, dan kegiatan sekolah.",
+    "image": "/assets/data/smkn.png",
+    "slug": "smkn-4-kota-tangerang",
+    "skills": [
+      {
+        "id": 1,
+        "skill": "React JS",
+        "image": "https://skillicons.dev/icons?i=react"
+      },
+      {
+        "id": 2,
+        "skill": "Tailwind CSS",
+        "image": "https://skillicons.dev/icons?i=tailwind"
+      },
+      {
+        "id": 3,
+        "skill": "Laravel",
+        "image": "https://skillicons.dev/icons?i=laravel"
+      },
+      {
+        "id": 4,
+        "skill": "MySQL",
+        "image": "https://skillicons.dev/icons?i=mysql"
+      },
+      {
+        "id": 5,
+        "skill": "Figma",
+        "image": "https://skillicons.dev/icons?i=figma"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "DIGIPUS",
+    "description": "Website perpustakaan digital yang memungkinkan pengguna untuk managemen buku, peminjaman buku, dan pengembalian buku perpustakaan.",
+    "image": "/assets/data/digipus.png",
+    "slug": "digipus",
+    "skills": [
+      {
+        "id": 1,
+        "skill": "Laravel",
+        "image": "https://skillicons.dev/icons?i=laravel"
+      },
+      {
+        "id": 2,
+        "skill": "Bootstrap",
+        "image": "https://skillicons.dev/icons?i=bootstrap"
+      },
+      {
+        "id": 3,
+        "skill": "MySQL",
+        "image": "https://skillicons.dev/icons?i=mysql"
+      },
+      {
+        "id": 4,
+        "skill": "Figma",
+        "image": "https://skillicons.dev/icons?i=figma"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Deal Dulu",
+    "description": "Platform e-commerce lelang livestream yang memungkinkan pengguna untuk membeli produk secara langsung melalui siaran langsung.",
+    "image": "/assets/data/dealdulu.png",
+    "slug": "deal-dulu",
+    "skills": [
+      {
+        "id": 1,
+        "skill": "Laravel",
+        "image": "https://skillicons.dev/icons?i=laravel"
+      },
+      {
+        "id": 2,
+        "skill": "Bootstrap",
+        "image": "https://skillicons.dev/icons?i=bootstrap"
+      },
+      {
+        "id": 3,
+        "skill": "jQuery",
+        "image": "https://skillicons.dev/icons?i=jquery"
+      },
+      {
+        "id": 4,
+        "skill": "PostgreSQL",
+        "image": "https://skillicons.dev/icons?i=postgresql"
+      },
+      {
+        "id": 5,
+        "skill": "Figma",
+        "image": "https://skillicons.dev/icons?i=figma"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Timpat Digital Gaming Center",
+    "description": "Website Internet Cafe yang memungkinkan pengguna untuk melihat informasi tentang layanan, harga, dan lokasi. Hingga pembuatan event game di Timpat Digital Gaming Center.",
+    "image": "/assets/data/tdgc.png",
+    "slug": "timpat-digital-gaming-center",
+    "skills": [
+      {
+        "id": 1,
+        "skill": "React JS",
+        "image": "https://skillicons.dev/icons?i=react"
+      },
+      {
+        "id": 2,
+        "skill": "Tailwind CSS",
+        "image": "https://skillicons.dev/icons?i=tailwind"
+      },
+      {
+        "id": 3,
+        "skill": "Laravel",
+        "image": "https://skillicons.dev/icons?i=laravel"
+      },
+      {
+        "id": 4,
+        "skill": "MySQL",
+        "image": "https://skillicons.dev/icons?i=mysql"
+      },
+      {
+        "id": 5,
+        "skill": "Figma",
+        "image": "https://skillicons.dev/icons?i=figma"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Confess Website",
+    "description": "Website platform untuk berbagi cerita secara anonim, memungkinkan pengguna untuk mengekspresikan diri tanpa mengungkapkan identitas mereka di SMKN 4 Kota Tangerang.",
+    "image": "/assets/data/confess.png",
+    "slug": "confess-website",
+    "skills": [
+      {
+        "id": 1,
+        "skill": "HTML",
+        "image": "https://skillicons.dev/icons?i=html"
+      },
+      {
+        "id": 2,
+        "skill": "CSS",
+        "image": "https://skillicons.dev/icons?i=css"
+      },
+      {
+        "id": 3,
+        "skill": "JavaScript",
+        "image": "https://skillicons.dev/icons?i=javascript"
+      },
+      {
+        "id": 2,
+        "skill": "Bootstrap",
+        "image": "https://skillicons.dev/icons?i=bootstrap"
+      },
+      {
+        "id": 3,
+        "skill": "Laravel",
+        "image": "https://skillicons.dev/icons?i=laravel"
+      },
+      {
+        "id": 4,
+        "skill": "MySQL",
+        "image": "https://skillicons.dev/icons?i=mysql"
+      },
+      {
+        "id": 5,
+        "skill": "Figma",
+        "image": "https://skillicons.dev/icons?i=figma"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "PT. Garda Integra Teknologi",
+    "description": "Website perusahaan PT. Garda Integra Teknologi yang menampilkan informasi tentang perusahaan, layanan, dan kontak.",
+    "image": "/assets/data/git.png",
+    "slug": "pt-garda-integra-teknologi",
+    "skills": [
+      {
+        "id": 1,
+        "skill": "HTML",
+        "image": "https://skillicons.dev/icons?i=html"
+      },
+      {
+        "id": 2,
+        "skill": "CSS",
+        "image": "https://skillicons.dev/icons?i=css"
+      },
+      {
+        "id": 3,
+        "skill": "JavaScript",
+        "image": "https://skillicons.dev/icons?i=javascript"
+      },
+      {
+        "id": 4,
+        "skill": "Bootstrap",
+        "image": "https://skillicons.dev/icons?i=bootstrap"
+      }
+    ]
+  }
+]

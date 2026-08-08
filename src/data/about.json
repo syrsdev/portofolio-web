@@ -1,0 +1,91 @@
+{
+  "about": "<p>I'm Surya Nata Ardhana, an Information Systems student at Telkom University Surabaya with over two years of hands-on experience in fullstack web development. I enjoy building responsive, dynamic, and high-quality websites that solve real problems.</p></br><p>My technical skills include:</p><ul><li><strong>Frontend Development:</strong> HTML, CSS, JavaScript, React.js, Bootstrap, Tailwind CSS</li><li><strong>Backend Development:</strong> PHP, Laravel, MySQL, PostgreSQL</li><li><strong>Other Tools:</strong> Figma (UI/UX Design), Git &amp; GitHub, Postman</li></ul></br><p>I'm currently expanding my expertise into Flutter and cross-platform app development to broaden my ability to deliver seamless digital experiences across platforms.</p><p>I'm open to opportunities as a Web Developer, whether through freelance projects, collaborations, or full-time roles. Feel free to connect if you'd like to discuss a project or potential collaboration.</p>",
+  "education": [
+    {
+      "id": 1,
+      "name": "Telkom University",
+      "major": "Information System",
+      "start_date": "2024-09-01",
+      "end_date": null
+    },
+    {
+      "id": 2,
+      "name": "SMKN 4 Kota Tangerang",
+      "major": "Software Engineering",
+      "start_date": "2021-07-01",
+      "end_date": "2024-05-01"
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "position": "Web Developer - EV Charging Monitoring System",
+      "company": "Telkom University Surabaya",
+      "location_type": "Hybrid",
+      "location": "Surabaya, Indonesia",
+      "status": { "title": "Part-time" },
+      "start_date": "2026-04-01",
+      "end_date": null
+    },
+    {
+      "id": 2,
+      "position": "Software Developer",
+      "company": "Freelance",
+      "location_type": "Remote",
+      "location": "Indonesia",
+      "status": { "title": "Freelance" },
+      "start_date": "2024-09-01",
+      "end_date": null
+    },
+    {
+      "id": 3,
+      "position": "Algorithm And Programming Lab Assistant",
+      "company": "Telkom University Surabaya",
+      "location_type": "On-site",
+      "location": "Surabaya, Indonesia",
+      "status": { "title": "Part-time" },
+      "start_date": "2025-09-01",
+      "end_date": "2026-07-01"
+    },
+    {
+      "id": 4,
+      "position": "Fullstack Developer - Sinicrita",
+      "company": "Telkom University Surabaya",
+      "location_type": "Remote",
+      "location": "Indonesia",
+      "status": { "title": "Contract" },
+      "start_date": "2025-02-01",
+      "end_date": "2025-12-01"
+    },
+    {
+      "id": 5,
+      "position": "Web Developer",
+      "company": "PT. Deal Dulu International",
+      "location_type": "Hybrid",
+      "location": "Tangerang, Indonesia",
+      "status": { "title": "Freelance" },
+      "start_date": "2023-09-01",
+      "end_date": "2023-12-01"
+    },
+    {
+      "id": 6,
+      "position": "Frontend Developer",
+      "company": "PT. Timpat Digital Asia",
+      "location_type": "Hybrid",
+      "location": "Tangerang Selatan, Indonesia",
+      "status": { "title": "Internship" },
+      "start_date": "2023-06-01",
+      "end_date": "2023-09-01"
+    },
+    {
+      "id": 7,
+      "position": "Frontend Developer",
+      "company": "Freelance",
+      "location_type": "Remote",
+      "location": "Indonesia",
+      "status": { "title": "Freelance" },
+      "start_date": "2022-08-01",
+      "end_date": "2022-12-01"
+    }
+  ]
+}

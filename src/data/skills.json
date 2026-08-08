@@ -1,0 +1,138 @@
+[
+  {
+    "id": 1,
+    "skill": "HTML",
+    "image": "https://skillicons.dev/icons?i=html"
+  },
+  {
+    "id": 2,
+    "skill": "CSS",
+    "image": "https://skillicons.dev/icons?i=css"
+  },
+  {
+    "id": 3,
+    "skill": "JavaScript",
+    "image": "https://skillicons.dev/icons?i=js"
+  },
+  {
+    "id": 4,
+    "skill": "jQuery",
+    "image": "https://skillicons.dev/icons?i=jquery"
+  },
+  {
+    "id": 5,
+    "skill": "TypeScript",
+    "image": "https://skillicons.dev/icons?i=ts"
+  },
+  {
+    "id": 6,
+    "skill": "Bootstrap",
+    "image": "https://skillicons.dev/icons?i=bootstrap"
+  },
+  {
+    "id": 7,
+    "skill": "Tailwind CSS",
+    "image": "https://skillicons.dev/icons?i=tailwind"
+  },
+  {
+    "id": 8,
+    "skill": "React JS",
+    "image": "https://skillicons.dev/icons?i=react"
+  },
+  {
+    "id": 9,
+    "skill": "Next JS",
+    "image": "https://skillicons.dev/icons?i=nextjs"
+  },
+  {
+    "id": 10,
+    "skill": "PHP",
+    "image": "https://skillicons.dev/icons?i=php"
+  },
+  {
+    "id": 11,
+    "skill": "Laravel",
+    "image": "https://skillicons.dev/icons?i=laravel"
+  },
+  {
+    "id": 12,
+    "skill": "Node JS",
+    "image": "https://skillicons.dev/icons?i=nodejs"
+  },
+  {
+    "id": 13,
+    "skill": "Express JS",
+    "image": "https://skillicons.dev/icons?i=express"
+  },
+  {
+    "id": 14,
+    "skill": "Nest JS",
+    "image": "https://skillicons.dev/icons?i=nestjs"
+  },
+  {
+    "id": 15,
+    "skill": "Golang",
+    "image": "https://skillicons.dev/icons?i=golang"
+  },
+  {
+    "id": 16,
+    "skill": "Dart",
+    "image": "https://skillicons.dev/icons?i=dart"
+  },
+  {
+    "id": 17,
+    "skill": "Flutter",
+    "image": "https://skillicons.dev/icons?i=flutter"
+  },
+  {
+    "id": 18,
+    "skill": "MySQL",
+    "image": "https://skillicons.dev/icons?i=mysql"
+  },
+  {
+    "id": 19,
+    "skill": "PostgreSQL",
+    "image": "https://skillicons.dev/icons?i=postgres"
+  },
+  {
+    "id": 20,
+    "skill": "GraphQL",
+    "image": "https://skillicons.dev/icons?i=graphql"
+  },
+  {
+    "id": 21,
+    "skill": "Figma",
+    "image": "https://skillicons.dev/icons?i=figma"
+  },
+
+  {
+    "id": 22,
+    "skill": "Firebase",
+    "image": "https://skillicons.dev/icons?i=firebase"
+  },
+  {
+    "id": 23,
+    "skill": "RabbitMQ",
+    "image": "https://skillicons.dev/icons?i=rabbitmq"
+  },
+  {
+    "id": 24,
+    "skill": "Git",
+    "image": "https://skillicons.dev/icons?i=git"
+  },
+  {
+    "id": 25,
+    "skill": "Docker",
+    "image": "https://skillicons.dev/icons?i=docker"
+  },
+  {
+    "id": 26,
+    "skill": "Prisma",
+    "image": "https://skillicons.dev/icons?i=prisma"
+  },
+  {
+    "id": 27,
+    "skill": "Postman",
+    "image": "https://skillicons.dev/icons?i=postman"
+  }
+]
