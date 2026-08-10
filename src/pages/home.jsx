@@ -115,7 +115,7 @@ const Home = () => {
               )}
             </div>
 
-            <div className="w-full mx-auto mt-16 lg:w-max" data-aos="fade-up">
+            <div className="w-full mx-auto mt-14 lg:w-max" data-aos="fade-up">
               <Button href={"/portfolio"}>More Projects</Button>
             </div>
           </section>
