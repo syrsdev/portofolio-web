@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import ButtonProject from "../button/buttonProject";
 
-function CardProject({ data, skills = [] }) {
+function CardProject({ data, skills = [], classname = "" }) {
   return (
     <div
-      className="relative flex flex-col w-full group"
+      className={`relative flex-col w-full flex group ${classname}`}
       data-aos="flip-up"
       data-aos-delay="200"
     >

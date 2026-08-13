@@ -100,12 +100,13 @@ const Home = () => {
                 </>
               ) : recentProject.length > 0 ? (
                 recentProject
-                  .slice(0, 3)
-                  .map((item) => (
+                  .slice(0, 4)
+                  .map((item, index) => (
                     <CardProject
                       key={item.id}
                       data={item}
                       skills={item.skills}
+                      classname={index === 3 ? "hidden md:flex xl:hidden" : ""}
                     />
                   ))
               ) : (
