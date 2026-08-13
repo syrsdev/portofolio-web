@@ -5,7 +5,11 @@ import ButtonProject from "../button/buttonProject";
 
 function CardProject({ data, skills = [] }) {
   return (
-    <div className="relative flex flex-col w-full group" data-aos="flip-up">
+    <div
+      className="relative flex flex-col w-full group"
+      data-aos="flip-up"
+      data-aos-delay="200"
+    >
       <Link
         to={`/under-construction`}
         // to={`/portfolio/${data.slug}`}

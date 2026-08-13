@@ -4,6 +4,7 @@ function CardSkill({ title, src, alt }) {
   return (
     <div
       data-aos="flip-up"
+      data-aos-delay="500"
       className="flex flex-col justify-center items-center px-7 py-4 md:px-8 md:py-5 cursor-pointer bg-secondary rounded-[18px] w-full gap-3"
     >
       <img
