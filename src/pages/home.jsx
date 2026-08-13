@@ -74,7 +74,7 @@ const Home = () => {
               className="flex items-center justify-center w-full md:justify-end md:w-fit lg:w-1/2"
             >
               <img
-                src="./assets/foto.svg"
+                src="./assets/foto (1).svg"
                 alt="surya nata ardhana"
                 className="w-9/12 mt-12 md:w-3/5 xl:w-fit md:mt-0"
               />
