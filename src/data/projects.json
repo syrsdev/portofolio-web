@@ -5,6 +5,7 @@
     "description": "Sistem monitoring pengisian daya kendaraan listrik berbasis website.",
     "image": "/assets/data/ev.png",
     "slug": "ev-charging-station-monitoring-system",
+    "figma_link": "https://www.figma.com/design/tFC0JI12BcOc8QEHSQMvFN/EV-Charging-station?node-id=0-1&t=wMIQM4k5TJ3oCVWr-1",
     "skills": [
       {
         "id": 1,
@@ -34,6 +35,7 @@
     "description": "Sistem Traceability berbasis website untuk memantau produk mawar dari petani hingga ke tangan konsumen.",
     "image": "/assets/data/treco.png",
     "slug": "treco-website",
+    "figma_link": "https://www.figma.com/design/rBIV2chG11CSM4ICFTT1VB/Treco?node-id=0-1&t=oiV4eIOlSgsvO6O3-1",
     "skills": [
       {
         "id": 1,
@@ -63,6 +65,7 @@
     "description": "Aplikasi Monitoring dan Edukasi Stunting berbasis AI untuk memantau pertumbuhan anak dan memberikan edukasi kepada orang tua.",
     "image": "/assets/data/myedunt.png",
     "slug": "myedunt",
+    "figma_link": "https://www.figma.com/design/nXiCBgRVOevD1uW6PBULqd/MyEdunt?node-id=0-1&t=ngTkAccZIdeDFuHw-1",
     "skills": [
       {
         "id": 1,
@@ -77,6 +80,8 @@
     "description": "Platform wadah bercerita secara anonim untuk mengurangi tingkat stres mahasiswa dengan fitur real-time chat dan call menggunakan Laravel Reverb.",
     "image": "/assets/data/sinicrita.png",
     "slug": "sinicrita",
+    "github_link": "https://github.com/sinicrita/sinicrita-web",
+    "figma_link": "https://www.figma.com/design/9nIlHWW6YRylTYJehfynBH/sinicrita?node-id=0-1&t=xtHeRds1uwMWzUR1-1",
     "skills": [
       {
         "id": 1,
@@ -140,6 +145,7 @@
     "description": "Website perjalanan yang memungkinkan pengguna untuk mencari dan memesan mobil, tiket kapal, dan paket perjalanan di Lombok.",
     "image": "/assets/data/gili.png",
     "slug": "gili-voyages-website",
+    "figma_link": "https://www.figma.com/design/67r5HUvSwq7vhhvrh4Ikif/gili-recommended?t=x1rYC8mhjlfK8FJc-1",
     "skills": [
       {
         "id": 1,
@@ -154,6 +160,7 @@
     "description": "Website perusahaan transportasi yang memungkinkan pengguna untuk mencari dan memesan layanan transportasi di Lombok.",
     "image": "/assets/data/rmj.png",
     "slug": "rmj-trans-website",
+    "link": "https://rmjtrans.com/",
     "skills": [
       {
         "id": 1,
@@ -168,6 +175,8 @@
     "description": "Aplikasi database pokemon yang memungkinkan pengguna untuk mencari dan melihat informasi tentang pokemon.",
     "image": "/assets/data/pokedex.png",
     "slug": "pokedex-app",
+    "github_link": "https://github.com/syrsdev/pokedex-app",
+    "figma_link": "https://www.figma.com/design/6nBx7ZqgtgiQyXJubJvhE8/MyPokeApp?t=x1rYC8mhjlfK8FJc-1",
     "skills": [
       {
         "id": 1,
@@ -192,6 +201,9 @@
     "description": "Website portofolio pribadi yang menampilkan informasi tentang saya, pengalaman kerja, dan proyek-proyek yang telah saya kerjakan.",
     "image": "/assets/data/porto.png",
     "slug": "portfolio-website",
+    "link": "https://syrsdev.vercel.app/",
+    "github_link": "https://github.com/syrsdev/portofolio-web",
+    "figma_link": "https://www.figma.com/design/DCIhmhiQ8q5m9K8QmsyqbX/portofolio-website?t=x1rYC8mhjlfK8FJc-1",
     "skills": [
       {
         "id": 1,
@@ -227,6 +239,7 @@
     "description": "Website sekolah resmi SMKN 4 Kota Tangerang yang menampilkan informasi tentang sekolah, program studi, dan kegiatan sekolah.",
     "image": "/assets/data/smkn.png",
     "slug": "smkn-4-kota-tangerang",
+    "link": "https://smkn4-tng.sch.id/",
     "skills": [
       {
         "id": 1,
@@ -261,6 +274,7 @@
     "description": "Website perpustakaan digital yang memungkinkan pengguna untuk managemen buku, peminjaman buku, dan pengembalian buku perpustakaan.",
     "image": "/assets/data/digipus.png",
     "slug": "digipus",
+    "github_link": "https://github.com/syrsdev/DIGIPUS",
     "skills": [
       {
         "id": 1,
@@ -290,6 +304,7 @@
     "description": "Platform e-commerce lelang livestream yang memungkinkan pengguna untuk membeli produk secara langsung melalui siaran langsung.",
     "image": "/assets/data/dealdulu.png",
     "slug": "deal-dulu",
+    "link": "https://dealdulu.com/",
     "skills": [
       {
         "id": 1,
@@ -358,6 +373,7 @@
     "description": "Website platform untuk berbagi cerita secara anonim, memungkinkan pengguna untuk mengekspresikan diri tanpa mengungkapkan identitas mereka di SMKN 4 Kota Tangerang.",
     "image": "/assets/data/confess.png",
     "slug": "confess-website",
+    "github_link": "https://github.com/alfianchii/confess",
     "skills": [
       {
         "id": 1,
@@ -375,22 +391,22 @@
         "image": "https://skillicons.dev/icons?i=javascript"
       },
       {
-        "id": 2,
+        "id": 4,
         "skill": "Bootstrap",
         "image": "https://skillicons.dev/icons?i=bootstrap"
       },
       {
-        "id": 3,
+        "id": 5,
         "skill": "Laravel",
         "image": "https://skillicons.dev/icons?i=laravel"
       },
       {
-        "id": 4,
+        "id": 6,
         "skill": "MySQL",
         "image": "https://skillicons.dev/icons?i=mysql"
       },
       {
-        "id": 5,
+        "id": 7,
         "skill": "Figma",
         "image": "https://skillicons.dev/icons?i=figma"
       }
@@ -402,6 +418,8 @@
     "description": "Website perusahaan PT. Garda Integra Teknologi yang menampilkan informasi tentang perusahaan, layanan, dan kontak.",
     "image": "/assets/data/git.png",
     "slug": "pt-garda-integra-teknologi",
+    "link": "https://www.gitnet.co.id/index.html",
+    "github_link": "https://github.com/syrsdev/GIT-Production",
     "skills": [
       {
         "id": 1,
