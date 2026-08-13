@@ -9,12 +9,12 @@ function CardProject({ data, skills = [] }) {
       <Link
         to={`/under-construction`}
         // to={`/portfolio/${data.slug}`}
-        className="h-full cursor-pointer font-bold relative text-transparent group-hover:text-white flex items-center justify-center group-hover:bg-black  w-full rounded-t-[15px] group-hover:bg-opacity-60 duration-500 transition-all"
+        className="h-max cursor-pointer font-bold relative text-transparent group-hover:text-white flex items-center justify-center group-hover:bg-black  w-full rounded-t-[15px] group-hover:bg-opacity-60 duration-500 transition-all"
       >
         <img
           src={data.image}
           alt={data.title}
-          className="rounded-t-[15px] w-full h-[180px] lg:h-[200px] object-cover group-hover:blur-[1px] relative -z-50"
+          className="rounded-t-[15px] w-full max-h-[180px] h-full md:h-[250px] object-fill group-hover:blur-[1px] relative -z-50"
         />
         <p className="absolute flex items-center justify-center gap-1">
           Detail Project <FaLongArrowAltRight className="ml-2" />

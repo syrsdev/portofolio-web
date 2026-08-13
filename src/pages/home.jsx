@@ -38,8 +38,8 @@ const Home = () => {
   return (
     <>
       <Layout>
-        <Container top="pt-[160px] md:pt-[180px]">
-          <header className="flex flex-col md:items-center md:flex-row">
+        <Container top="pt-[160px] md:pt-[180px] lg:pt-0">
+          <header className="flex flex-col lg:h-screen md:items-center md:flex-row">
             <div
               data-aos="fade-right"
               className="flex flex-col justify-center w-full gap-2 md:gap-1 md:w-1/2"
@@ -115,7 +115,7 @@ const Home = () => {
               )}
             </div>
 
-            <div className="w-full mx-auto mt-14 lg:w-max" data-aos="fade-up">
+            <div className="w-full mx-auto mt-10 lg:w-max" data-aos="fade-up">
               <Button href={"/portfolio"}>More Projects</Button>
             </div>
           </section>
